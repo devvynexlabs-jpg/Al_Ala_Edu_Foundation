@@ -2,13 +2,9 @@ import React from 'react';
 import { PageView, ActivityStory } from '../types';
 import { HeroSection } from '../components/HeroSection';
 import { StatBand } from '../components/StatBand';
-import { MissionIntro } from '../components/MissionIntro';
 import { FocusAreasGrid } from '../components/FocusAreasGrid';
 import { ChairpersonQuote } from '../components/ChairpersonQuote';
-import { FeaturedPrograms } from '../components/FeaturedPrograms';
-import { StrategicGoalsSection } from '../components/StrategicGoalsSection';
 import { NewsletterBand } from '../components/NewsletterBand';
-import { HomeSlideshow } from '../components/HomeSlideshow';
 
 interface HomePageProps {
   setCurrentView: (view: PageView) => void;
@@ -23,41 +19,29 @@ export const HomePage: React.FC<HomePageProps> = ({
   setSelectedPillarId,
   openPillarModal,
   openReportModal,
-  onStorySelect
 }) => {
   return (
     <div className="w-full">
-      {/* Full-width Slideshow Banner just below Navbar */}
-      <HomeSlideshow />
-
+      {/* 1. Spacious, Editorial Hero with Integrated Photo Slideshow */}
       <HeroSection 
         setCurrentView={setCurrentView} 
         openReportModal={openReportModal} 
       />
       
+      {/* 2. Sleek 4-Metric Impact Bar */}
       <StatBand />
 
-      <MissionIntro 
-        setCurrentView={setCurrentView} 
-        openReportModal={openReportModal} 
-      />
-
+      {/* 3. Curated 4-Pillar Welfare Preview with View All Button */}
       <FocusAreasGrid 
         setCurrentView={setCurrentView}
         setSelectedPillarId={setSelectedPillarId}
         openPillarModal={openPillarModal}
       />
 
+      {/* 4. Elegant Leadership Pull Quote */}
       <ChairpersonQuote />
 
-      <FeaturedPrograms 
-        onStorySelect={onStorySelect}
-      />
-
-      <StrategicGoalsSection 
-        setCurrentView={setCurrentView} 
-      />
-
+      {/* 5. Minimal Community Engagement / Newsletter Banner */}
       <NewsletterBand 
         setCurrentView={setCurrentView} 
       />
