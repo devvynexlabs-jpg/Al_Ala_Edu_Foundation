@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { FOUNDATION_META } from '../data/foundationData';
 import { GraduationCap, HeartHandshake, Users, ShieldAlert } from 'lucide-react';
 import { ScrollReveal } from './ScrollReveal';
 
@@ -69,81 +70,88 @@ const AnimatedNumber: React.FC<AnimatedNumberProps> = ({
 
 export const StatBand: React.FC = () => {
   return (
-    <section className="w-full bg-[#0D3B82] text-white py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-y border-[#1A4E9E]">
+    <section className="w-full bg-[#0D3B82] text-white py-12 px-4 sm:px-6 lg:px-8 border-y border-[#1A4E9E]">
       <div className="max-w-7xl mx-auto">
         
-        {/* 4 Clean, High-Impact Stat Blocks */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        {/* Main Banner Headline (Inspired by Malala Fund's stat callout) */}
+        <div className="text-center max-w-4xl mx-auto mb-10 space-y-3">
+          <ScrollReveal direction="fade" delay={75}>
+            <p className="text-xs uppercase tracking-widest text-[#008CD3] font-bold">
+              2025–2026 Annual Report Summary
+            </p>
+          </ScrollReveal>
+          <ScrollReveal delay={150}>
+            <h2 className="font-sans text-xl sm:text-2xl md:text-3xl font-bold leading-tight text-stone-100">
+              "27 Years of Serving Communities Through Education & Welfare."
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal delay={200}>
+            <p className="text-sm sm:text-base text-stone-300 max-w-2xl mx-auto font-sans">
+              Grounded in Islamic values of service (Khidmah & Sadaqah), bridging inequality across 8 comprehensive welfare sectors in Pakistan.
+            </p>
+          </ScrollReveal>
+        </div>
+
+        {/* 4 Key Stat Metrics */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4 border-t border-[#1A4E9E]">
           
-          {/* Stat 1 */}
-          <ScrollReveal delay={75} className="w-full">
-            <div className="text-center space-y-2 p-6 rounded-2xl bg-[#1A4E9E]/30 border border-[#1A4E9E]/60 h-full flex flex-col justify-center">
-              <div className="inline-flex p-2.5 rounded-xl bg-[#008CD3]/20 text-[#008CD3] mx-auto mb-1">
-                <GraduationCap className="w-6 h-6 text-amber-300" />
+          <ScrollReveal delay={100} className="w-full">
+            <div className="text-center space-y-1 p-4 rounded-xl bg-[#1A4E9E]/50 border border-[#1A4E9E] h-full">
+              <div className="inline-flex p-2 rounded-lg bg-[#008CD3]/20 text-[#008CD3] mb-1">
+                <GraduationCap className="w-5 h-5" />
               </div>
-              <div className="font-mono text-3xl sm:text-4xl lg:text-5xl font-black text-amber-400">
+              <div className="font-mono text-2xl sm:text-3xl font-extrabold text-amber-400">
                 <AnimatedNumber value={27} suffix=" Years" />
               </div>
-              <div className="text-sm font-bold text-white tracking-wide">
-                Unbroken Service
+              <div className="text-xs font-semibold text-stone-300">
+                Educational Excellence (Est. 1999)
               </div>
-              <p className="text-xs text-stone-300 font-sans">
-                Under Al-Ala Int'l Islamic School (Est. 1999)
-              </p>
+              <p className="text-[11px] text-stone-400">Under Al-Ala Int'l Islamic School</p>
             </div>
           </ScrollReveal>
 
-          {/* Stat 2 */}
           <ScrollReveal delay={150} className="w-full">
-            <div className="text-center space-y-2 p-6 rounded-2xl bg-[#1A4E9E]/30 border border-[#1A4E9E]/60 h-full flex flex-col justify-center">
-              <div className="inline-flex p-2.5 rounded-xl bg-[#008CD3]/20 text-[#008CD3] mx-auto mb-1">
-                <Users className="w-6 h-6 text-amber-300" />
+            <div className="text-center space-y-1 p-4 rounded-xl bg-[#1A4E9E]/50 border border-[#1A4E9E] h-full">
+              <div className="inline-flex p-2 rounded-lg bg-[#008CD3]/20 text-[#008CD3] mb-1">
+                <HeartHandshake className="w-5 h-5" />
               </div>
-              <div className="font-mono text-3xl sm:text-4xl lg:text-5xl font-black text-amber-400">
-                <AnimatedNumber value={100} suffix="%" />
-              </div>
-              <div className="text-sm font-bold text-white tracking-wide">
-                Free for Orphans
-              </div>
-              <p className="text-xs text-stone-300 font-sans">
-                Full tuition, textbooks, uniforms & meals
-              </p>
-            </div>
-          </ScrollReveal>
-
-          {/* Stat 3 */}
-          <ScrollReveal delay={225} className="w-full">
-            <div className="text-center space-y-2 p-6 rounded-2xl bg-[#1A4E9E]/30 border border-[#1A4E9E]/60 h-full flex flex-col justify-center">
-              <div className="inline-flex p-2.5 rounded-xl bg-[#008CD3]/20 text-[#008CD3] mx-auto mb-1">
-                <HeartHandshake className="w-6 h-6 text-amber-300" />
-              </div>
-              <div className="font-mono text-3xl sm:text-4xl lg:text-5xl font-black text-amber-400">
+              <div className="font-mono text-2xl sm:text-3xl font-extrabold text-amber-400">
                 <AnimatedNumber value={8} suffix=" Pillars" />
               </div>
-              <div className="text-sm font-bold text-white tracking-wide">
-                Holistic Welfare
+              <div className="text-xs font-semibold text-stone-300">
+                Welfare & Relief Sectors
               </div>
-              <p className="text-xs text-stone-300 font-sans">
-                Education, healthcare, women & child care
-              </p>
+              <p className="text-[11px] text-stone-400">Child, Women, Health, Relief & More</p>
             </div>
           </ScrollReveal>
 
-          {/* Stat 4 */}
-          <ScrollReveal delay={300} className="w-full">
-            <div className="text-center space-y-2 p-6 rounded-2xl bg-[#1A4E9E]/30 border border-[#1A4E9E]/60 h-full flex flex-col justify-center">
-              <div className="inline-flex p-2.5 rounded-xl bg-[#008CD3]/20 text-[#008CD3] mx-auto mb-1">
-                <ShieldAlert className="w-6 h-6 text-amber-300" />
+          <ScrollReveal delay={200} className="w-full">
+            <div className="text-center space-y-1 p-4 rounded-xl bg-[#1A4E9E]/50 border border-[#1A4E9E] h-full">
+              <div className="inline-flex p-2 rounded-lg bg-[#008CD3]/20 text-[#008CD3] mb-1">
+                <Users className="w-5 h-5" />
               </div>
-              <div className="font-mono text-3xl sm:text-4xl lg:text-5xl font-black text-amber-400">
-                Rapid Aid
+              <div className="font-mono text-2xl sm:text-3xl font-extrabold text-amber-400">
+                <AnimatedNumber value={100} suffix="% Free" />
               </div>
-              <div className="text-sm font-bold text-white tracking-wide">
-                Emergency Response
+              <div className="text-xs font-semibold text-stone-300">
+                Scholarships for Orphans & Poor
               </div>
-              <p className="text-xs text-stone-300 font-sans">
-                Flood relief, cancer patient aid & Gaza drives
-              </p>
+              <p className="text-[11px] text-stone-400">Tuition, Uniforms & Free Books</p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={250} className="w-full">
+            <div className="text-center space-y-1 p-4 rounded-xl bg-[#1A4E9E]/50 border border-[#1A4E9E] h-full">
+              <div className="inline-flex p-2 rounded-lg bg-[#008CD3]/20 text-[#008CD3] mb-1">
+                <ShieldAlert className="w-5 h-5" />
+              </div>
+              <div className="font-mono text-2xl sm:text-3xl font-extrabold text-amber-400">
+                Active Aid
+              </div>
+              <div className="text-xs font-semibold text-stone-300">
+                Gaza & Flood Emergency Relief
+              </div>
+              <p className="text-[11px] text-stone-400">Community Bake Sales & Medical Camps</p>
             </div>
           </ScrollReveal>
 

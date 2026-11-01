@@ -30,11 +30,11 @@ export const StrategicGoalsPage: React.FC<StrategicGoalsPageProps> = ({
             <Target className="w-3.5 h-3.5 text-[#008CD3]" />
             <span>INSTITUTIONAL ROADMAP • 2026–2027</span>
           </div>
-          <h1 className="font-sans text-3xl sm:text-4xl md:text-5xl font-black leading-tight tracking-tight">
+          <h1 className="font-sans text-3xl sm:text-4xl md:text-[44px] font-black leading-tight tracking-tight">
             Strategic Objectives 2026–2027
           </h1>
-          <p className="text-stone-200 text-base max-w-2xl leading-relaxed">
-            Approved by the Board of Trustees to steer our institutional focus across education, welfare, and emergency relief.
+          <p className="text-stone-300 text-base max-w-3xl leading-relaxed">
+            Approved by Chairperson Ma'am Tayyiba Imtiaz and the Board of Trustees. Setting our institutional focus for educational excellence, scholarship expansion, women empowerment, health awareness, and emergency humanitarian relief.
           </p>
         </div>
       </section>
@@ -44,14 +44,14 @@ export const StrategicGoalsPage: React.FC<StrategicGoalsPageProps> = ({
 
       {/* Chairperson Endorsement Box */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
-        <div className="p-8 sm:p-10 bg-[#0D3B82] text-white rounded-3xl space-y-4 relative overflow-hidden shadow-md border border-[#1A4E9E]">
+        <div className="p-8 bg-[#1A4E9E] text-white rounded-3xl space-y-4 relative overflow-hidden">
           <div className="flex items-center gap-2 text-xs font-bold text-amber-300 uppercase tracking-widest">
-            <Sparkles className="w-4 h-4 text-amber-300" />
+            <Sparkles className="w-4 h-4 text-[#008CD3]" />
             <span>LEADERSHIP COMMITMENT</span>
           </div>
 
-          <p className="font-sans text-base sm:text-lg font-bold leading-relaxed italic text-white max-w-4xl">
-            "Through disciplined governance, educational tarbiyyah, and public trust, we aim to transform thousands more lives in 2026–2027."
+          <p className="font-sans text-base sm:text-lg font-normal leading-relaxed italic text-stone-100 max-w-4xl">
+            "These strategic objectives represent our solemn vow to the communities we serve. Through disciplined governance, research-informed pedagogy, and generous public support, we aim to transform thousands more lives in 2026–2027."
           </p>
 
           <div className="pt-4 border-t border-stone-600 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
