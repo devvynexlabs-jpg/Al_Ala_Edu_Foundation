@@ -1,5 +1,6 @@
 import React from 'react';
 import { PageView, ActivityStory } from '../types';
+import { HomeSlideshow } from '../components/HomeSlideshow';
 import { HeroSection } from '../components/HeroSection';
 import { StatBand } from '../components/StatBand';
 import { FocusAreasGrid } from '../components/FocusAreasGrid';
@@ -22,26 +23,29 @@ export const HomePage: React.FC<HomePageProps> = ({
 }) => {
   return (
     <div className="w-full">
-      {/* 1. Spacious, Editorial Hero with Integrated Photo Slideshow */}
+      {/* 1. Full-width Photography Slideshow (Natural Colors, Zero Blue Gradient) */}
+      <HomeSlideshow />
+
+      {/* 2. Spacious, Editorial Hero */}
       <HeroSection 
         setCurrentView={setCurrentView} 
         openReportModal={openReportModal} 
       />
       
-      {/* 2. Sleek 4-Metric Impact Bar */}
+      {/* 3. Sleek 4-Metric Impact Bar */}
       <StatBand />
 
-      {/* 3. Curated 4-Pillar Welfare Preview with View All Button */}
+      {/* 4. Curated 4-Pillar Welfare Preview with View All Button */}
       <FocusAreasGrid 
         setCurrentView={setCurrentView}
         setSelectedPillarId={setSelectedPillarId}
         openPillarModal={openPillarModal}
       />
 
-      {/* 4. Elegant Leadership Pull Quote */}
+      {/* 5. Elegant Leadership Pull Quote */}
       <ChairpersonQuote />
 
-      {/* 5. Minimal Community Engagement / Newsletter Banner */}
+      {/* 6. Minimal Community Engagement / Newsletter Banner */}
       <NewsletterBand 
         setCurrentView={setCurrentView} 
       />
