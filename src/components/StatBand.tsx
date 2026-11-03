@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { GraduationCap, HeartHandshake, Users, ShieldAlert } from 'lucide-react';
 import { ScrollReveal } from './ScrollReveal';
 
 interface AnimatedNumberProps {
@@ -68,87 +67,49 @@ const AnimatedNumber: React.FC<AnimatedNumberProps> = ({
 };
 
 export const StatBand: React.FC = () => {
+  const stats = [
+    {
+      number: <AnimatedNumber value={27} suffix="+" />,
+      label: 'Years of Service',
+      sub: 'Founded in 1999'
+    },
+    {
+      number: <AnimatedNumber value={8} suffix=" Pillars" />,
+      label: 'Welfare Sectors',
+      sub: 'Education, health, food & relief'
+    },
+    {
+      number: <AnimatedNumber value={100} suffix="%" />,
+      label: 'Free for Orphans',
+      sub: 'Tuition, uniforms & books'
+    },
+    {
+      number: 'Active',
+      label: 'Emergency Relief',
+      sub: 'Gaza, floods & food drives'
+    }
+  ];
+
   return (
-    <section className="w-full bg-[#0D3B82] text-white py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-y border-[#1A4E9E]">
+    <section className="w-full bg-[#0D3B82] text-white py-14 px-4 sm:px-6 lg:px-8 border-y border-[#1A4E9E]">
       <div className="max-w-7xl mx-auto">
-        
-        {/* 4 Clean, High-Impact Stat Blocks */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-          
-          {/* Stat 1 */}
-          <ScrollReveal delay={75} className="w-full">
-            <div className="text-center space-y-2 p-6 rounded-2xl bg-[#1A4E9E]/30 border border-[#1A4E9E]/60 h-full flex flex-col justify-center">
-              <div className="inline-flex p-2.5 rounded-xl bg-[#008CD3]/20 text-[#008CD3] mx-auto mb-1">
-                <GraduationCap className="w-6 h-6 text-amber-300" />
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+          {stats.map((item, idx) => (
+            <ScrollReveal key={idx} delay={idx * 75} className="w-full">
+              <div className="text-center sm:text-left space-y-1 sm:border-l sm:border-white/15 sm:pl-6">
+                <div className="font-mono text-3xl sm:text-4xl md:text-5xl font-black text-amber-400 tracking-tight">
+                  {item.number}
+                </div>
+                <div className="text-sm sm:text-base font-bold text-white tracking-wide">
+                  {item.label}
+                </div>
+                <p className="text-xs text-stone-300 font-sans">
+                  {item.sub}
+                </p>
               </div>
-              <div className="font-mono text-3xl sm:text-4xl lg:text-5xl font-black text-amber-400">
-                <AnimatedNumber value={27} suffix=" Years" />
-              </div>
-              <div className="text-sm font-bold text-white tracking-wide">
-                Unbroken Service
-              </div>
-              <p className="text-xs text-stone-300 font-sans">
-                Under Al-Ala Int'l Islamic School (Est. 1999)
-              </p>
-            </div>
-          </ScrollReveal>
-
-          {/* Stat 2 */}
-          <ScrollReveal delay={150} className="w-full">
-            <div className="text-center space-y-2 p-6 rounded-2xl bg-[#1A4E9E]/30 border border-[#1A4E9E]/60 h-full flex flex-col justify-center">
-              <div className="inline-flex p-2.5 rounded-xl bg-[#008CD3]/20 text-[#008CD3] mx-auto mb-1">
-                <Users className="w-6 h-6 text-amber-300" />
-              </div>
-              <div className="font-mono text-3xl sm:text-4xl lg:text-5xl font-black text-amber-400">
-                <AnimatedNumber value={100} suffix="%" />
-              </div>
-              <div className="text-sm font-bold text-white tracking-wide">
-                Free for Orphans
-              </div>
-              <p className="text-xs text-stone-300 font-sans">
-                Full tuition, textbooks, uniforms & meals
-              </p>
-            </div>
-          </ScrollReveal>
-
-          {/* Stat 3 */}
-          <ScrollReveal delay={225} className="w-full">
-            <div className="text-center space-y-2 p-6 rounded-2xl bg-[#1A4E9E]/30 border border-[#1A4E9E]/60 h-full flex flex-col justify-center">
-              <div className="inline-flex p-2.5 rounded-xl bg-[#008CD3]/20 text-[#008CD3] mx-auto mb-1">
-                <HeartHandshake className="w-6 h-6 text-amber-300" />
-              </div>
-              <div className="font-mono text-3xl sm:text-4xl lg:text-5xl font-black text-amber-400">
-                <AnimatedNumber value={8} suffix=" Pillars" />
-              </div>
-              <div className="text-sm font-bold text-white tracking-wide">
-                Holistic Welfare
-              </div>
-              <p className="text-xs text-stone-300 font-sans">
-                Education, healthcare, women & child care
-              </p>
-            </div>
-          </ScrollReveal>
-
-          {/* Stat 4 */}
-          <ScrollReveal delay={300} className="w-full">
-            <div className="text-center space-y-2 p-6 rounded-2xl bg-[#1A4E9E]/30 border border-[#1A4E9E]/60 h-full flex flex-col justify-center">
-              <div className="inline-flex p-2.5 rounded-xl bg-[#008CD3]/20 text-[#008CD3] mx-auto mb-1">
-                <ShieldAlert className="w-6 h-6 text-amber-300" />
-              </div>
-              <div className="font-mono text-3xl sm:text-4xl lg:text-5xl font-black text-amber-400">
-                Rapid Aid
-              </div>
-              <div className="text-sm font-bold text-white tracking-wide">
-                Emergency Response
-              </div>
-              <p className="text-xs text-stone-300 font-sans">
-                Flood relief, cancer patient aid & Gaza drives
-              </p>
-            </div>
-          </ScrollReveal>
-
+            </ScrollReveal>
+          ))}
         </div>
-
       </div>
     </section>
   );

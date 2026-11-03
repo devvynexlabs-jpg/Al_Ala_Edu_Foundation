@@ -28,11 +28,11 @@ export const NewsletterBand: React.FC<NewsletterBandProps> = ({ setCurrentView }
             <span className="text-xs uppercase tracking-widest font-bold text-amber-200">
               STAY CONNECTED WITH AL-ALA FOUNDATION
             </span>
-            <h2 className="font-sans text-2xl sm:text-3xl font-black leading-tight">
-              Stay Informed on Ground Impact
+            <h2 className="font-sans text-2xl sm:text-3xl font-bold leading-tight">
+              Join us in empowering communities — sign up for updates.
             </h2>
-            <p className="text-amber-100 text-sm max-w-lg font-sans">
-              Quarterly updates on student scholarships, medical camps, and relief drives.
+            <p className="text-amber-100 text-sm max-w-xl font-sans">
+              Receive quarterly welfare progress reports, stories of student impact, and invitations to our community bake sales and health camps.
             </p>
           </div>
 

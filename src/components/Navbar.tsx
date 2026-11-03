@@ -8,8 +8,6 @@ import {
   X, 
   Calculator, 
   BookOpen, 
-  Phone, 
-  Award,
   Search
 } from 'lucide-react';
 
@@ -63,45 +61,6 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   return (
     <header className="sticky top-0 z-50 w-full transition-all duration-300">
-      {/* Top Banner - Islamic Values & Quick Access */}
-      <div className="bg-[#0D3B82] text-white text-xs py-2 px-4 border-b border-[#1A4E9E]">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-          <div className="flex items-center gap-3">
-            <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-[#008CD3] text-white font-semibold text-[11px] tracking-wide">
-              <Award className="w-3 h-3" /> 27 YEARS (EST. 1999)
-            </span>
-            <span className="hidden md:inline text-stone-300 font-sans italic">
-              Al-Ala International Islamic School — Educating & Serving Communities
-            </span>
-          </div>
-
-          <div className="flex items-center gap-4 text-stone-300 text-[11px]">
-            <button 
-              onClick={openZakatModal}
-              className="hover:text-amber-400 flex items-center gap-1 transition-colors cursor-pointer"
-            >
-              <Calculator className="w-3.5 h-3.5 text-[#008CD3]" />
-              <span>Zakat & Sadaqah Calculator</span>
-            </button>
-            <span className="text-stone-600">|</span>
-            <button 
-              onClick={openReportModal}
-              className="hover:text-amber-400 flex items-center gap-1 transition-colors cursor-pointer"
-            >
-              <BookOpen className="w-3.5 h-3.5 text-amber-400" />
-              <span>Annual Report 2025–26</span>
-            </button>
-            <span className="text-stone-600 hidden sm:inline">|</span>
-            <a 
-              href={`tel:${FOUNDATION_META.contactPhone}`}
-              className="hover:text-white hidden sm:flex items-center gap-1 transition-colors"
-            >
-              <Phone className="w-3.5 h-3.5 text-stone-400" />
-              <span>{FOUNDATION_META.contactPhone}</span>
-            </a>
-          </div>
-        </div>
-      </div>
 
       {/* Main Navbar */}
       <nav 

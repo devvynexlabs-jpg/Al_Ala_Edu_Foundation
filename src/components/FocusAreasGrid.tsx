@@ -1,7 +1,7 @@
 import React from 'react';
 import { WELFARE_PILLARS } from '../data/foundationData';
 import { PageView } from '../types';
-import { ArrowUpRight } from 'lucide-react';
+import { Layers, ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ScrollReveal } from './ScrollReveal';
 
 interface FocusAreasGridProps {
@@ -16,99 +16,99 @@ export const FocusAreasGrid: React.FC<FocusAreasGridProps> = ({
   openPillarModal
 }) => {
   return (
-    <section className="py-20 md:py-28 bg-[#F8FAFC] border-t border-stone-200/80">
+    <section className="py-20 md:py-28 bg-[#F8FAFC] border-b border-stone-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <ScrollReveal>
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
-            <div className="max-w-xl space-y-3">
-              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#008CD3]">
-                <span>OUR 8 WELFARE PILLARS</span>
-              </div>
-              <h2 className="font-sans text-3xl sm:text-4xl font-black text-[#0D3B82] tracking-tight">
-                Where Your Support Creates Change
-              </h2>
-              <p className="text-stone-600 text-sm sm:text-base font-sans">
-                Each pillar represents a dedicated, ground-level initiative serving orphans, struggling families, and vulnerable communities.
-              </p>
+          <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
+            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#008CD3]">
+              <Layers className="w-3.5 h-3.5" />
+              <span>CORE WELFARE INITIATIVES</span>
             </div>
+            <h2 className="font-sans text-3xl sm:text-4xl md:text-5xl font-black text-[#0D3B82] tracking-tight">
+              Our 8 Welfare Programs
+            </h2>
+            <p className="text-stone-600 text-sm sm:text-base font-sans max-w-2xl mx-auto">
+              Through our 8 core pillars, Al-Ala Education Foundation provides holistic community care, free education, healthcare, and humanitarian relief.
+            </p>
+          </div>
+        </ScrollReveal>
 
+        {/* 8-Card Responsive Grid (Clean natural photos, zero blue hue) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-7">
+          {WELFARE_PILLARS.map((pillar, idx) => (
+            <ScrollReveal key={pillar.id} delay={(idx % 4) * 75} className="h-full">
+              <div
+                onClick={() => openPillarModal(pillar.id)}
+                className="group bg-white rounded-2xl overflow-hidden border border-stone-200/90 shadow-xs hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between h-full cursor-pointer"
+              >
+                {/* Card Top: Natural Photography (No Blue Gradient / No Hue) */}
+                <div className="relative h-48 sm:h-52 w-full overflow-hidden bg-stone-100">
+                  <img
+                    src={pillar.imageUrl}
+                    alt={pillar.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  
+                  {/* Pillar Number Badge */}
+                  <div className="absolute top-3.5 left-3.5 z-10">
+                    <span className="font-mono text-xs font-bold text-white bg-[#0D3B82]/90 backdrop-blur-xs px-2.5 py-1 rounded-md shadow-xs">
+                      Pillar {pillar.number}
+                    </span>
+                  </div>
+
+                  {/* Highlight Tag */}
+                  {pillar.highlightTag && (
+                    <div className="absolute top-3.5 right-3.5 z-10">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-stone-900 bg-amber-400 px-2 py-0.5 rounded shadow-xs">
+                        {pillar.highlightTag}
+                      </span>
+                    </div>
+                  )}
+                </div>
+
+                {/* Card Body */}
+                <div className="p-5 sm:p-6 flex flex-col justify-between flex-1 space-y-4 bg-white">
+                  <div className="space-y-2">
+                    <h3 className="font-sans text-lg font-bold text-[#0D3B82] group-hover:text-[#008CD3] transition-colors leading-snug">
+                      {pillar.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-stone-600 leading-relaxed line-clamp-3 font-sans">
+                      {pillar.shortDescription}
+                    </p>
+                  </div>
+
+                  {/* Card Footer */}
+                  <div className="pt-3 border-t border-stone-100 flex items-center justify-between text-xs">
+                    <span className="text-stone-500 font-medium truncate max-w-[65%]">
+                      {pillar.impactMetric || `${pillar.activities.length} Key Initiatives`}
+                    </span>
+                    <span className="font-bold text-[#008CD3] group-hover:translate-x-1 transition-transform inline-flex items-center gap-1 shrink-0">
+                      Details <ArrowUpRight className="w-3.5 h-3.5" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+          ))}
+        </div>
+
+        {/* View Programs Details CTA */}
+        <ScrollReveal delay={200}>
+          <div className="pt-14 text-center">
             <button
               onClick={() => {
                 setCurrentView('programs');
                 setSelectedPillarId(null);
               }}
-              className="self-start md:self-end bg-white hover:bg-[#008CD3] hover:text-white text-[#0D3B82] text-xs font-bold px-6 py-3 rounded-xl border border-stone-300 shadow-2xs transition-all cursor-pointer shrink-0"
+              className="inline-flex items-center gap-2 bg-[#0D3B82] hover:bg-[#1A4E9E] text-white text-sm font-bold px-8 py-4 rounded-xl shadow-md hover:shadow-lg transition-all cursor-pointer group"
             >
-              Browse Complete Directory →
+              <span>View Full Program Details</span>
+              <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
         </ScrollReveal>
-
-        {/* 8-Tile Clean Visual Photo Grid with Max 1-Line Description */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {WELFARE_PILLARS.map((pillar, idx) => {
-            const delays: (75 | 100 | 150 | 200 | 300 | 400 | 500)[] = [75, 150, 225, 300, 75, 150, 225, 300];
-            const delay = delays[idx % delays.length];
-
-            return (
-              <ScrollReveal key={pillar.id} delay={delay} className="h-full">
-                <div
-                  onClick={() => openPillarModal(pillar.id)}
-                  className="group relative h-96 rounded-3xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer bg-stone-900 border border-stone-200/80 flex flex-col justify-between p-6 text-white h-full zoom-container"
-                >
-                  {/* Background Photo with Calming Smooth Zoom */}
-                  <img
-                    src={pillar.imageUrl}
-                    alt={pillar.title}
-                    className="absolute inset-0 w-full h-full object-cover zoom-image opacity-80 group-hover:opacity-90"
-                  />
-
-                  {/* Dark Radial Gradient Overlay for High Contrast Text */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0D3B82] via-[#0D3B82]/40 to-transparent group-hover:from-[#0D3B82]/95 transition-all duration-300"></div>
-
-                  {/* Top Badges */}
-                  <div className="relative z-10 flex items-center justify-between">
-                    <span className="font-mono text-xs font-bold text-white bg-[#008CD3] px-3 py-1 rounded-full shadow-xs">
-                      Pillar {pillar.number}
-                    </span>
-
-                    {pillar.highlightTag && (
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-stone-900 bg-amber-400 px-2.5 py-0.5 rounded-full shadow-xs">
-                        {pillar.highlightTag}
-                      </span>
-                    )}
-                  </div>
-
-                  {/* Bottom Content Area: Minimalist & Visual */}
-                  <div className="relative z-10 space-y-2">
-                    <div className="flex items-center justify-between gap-2">
-                      <h3 className="font-sans text-xl font-bold leading-tight text-white group-hover:text-amber-300 transition-colors">
-                        {pillar.title}
-                      </h3>
-                      <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md shrink-0 flex items-center justify-center group-hover:bg-[#008CD3] group-hover:text-white transition-colors">
-                        <ArrowUpRight className="w-4 h-4 text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                      </div>
-                    </div>
-
-                    {/* Strict 1-Line Description */}
-                    <p className="text-xs text-stone-200 leading-relaxed font-sans line-clamp-1">
-                      {pillar.shortDescription}
-                    </p>
-
-                    <div className="pt-2 text-right">
-                      <span className="text-[11px] font-semibold text-amber-300 group-hover:underline">
-                        View Pillar Details →
-                      </span>
-                    </div>
-                  </div>
-
-                </div>
-              </ScrollReveal>
-            );
-          })}
-        </div>
 
       </div>
     </section>
