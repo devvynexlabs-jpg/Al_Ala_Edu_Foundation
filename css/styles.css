@@ -5,31 +5,53 @@
    ========================================================================== */
 
 :root {
-  /* Amsterdam Signature Colors */
-  --primary-accent: #81d98e;
-  --primary-accent-hover: #65a86f;
-  --primary-accent-dark: #276934;
-  --primary-accent-soft: rgba(129, 217, 142, 0.15);
+  /* Primary Brand Palette */
+  --color-foundation-navy: #0D3B82;
+  --color-foundation-slate: #1A4E9E;
+  --color-foundation-terracotta: #008CD3;
+  --color-foundation-terracotta-hover: #007AB8;
+  --color-foundation-gold: #E5A93C;
+  --color-foundation-sand: #F4F7FA;
+  --color-foundation-stone: #E6EEF5;
 
-  --bg-dark: #000000;
-  --bg-dark-card: #111111;
-  --bg-dark-subtle: #1c1c1c;
+  /* Primary Accent & CTA (Vibrant Sky Blue) */
+  --primary-accent: #008CD3;
+  --primary-accent-hover: #007AB8;
+  --primary-accent-dark: #0D3B82;
+  --primary-accent-soft: rgba(0, 140, 211, 0.12);
 
+  /* Gold / Warm Contrast Accent */
+  --accent-gold: #E5A93C;
+  --accent-gold-soft: rgba(229, 169, 60, 0.15);
+
+  /* Deep Canvas & Footer (Dark Stone #1C1917 / #292524) */
+  --bg-dark: #1C1917;
+  --bg-dark-card: #292524;
+  --bg-dark-subtle: #0D3B82;
+
+  /* Light Canvas & Surfaces (Ice Slate #F8FAFC, Pure White #FFFFFF, Sand #F4F7FA) */
+  --bg-canvas: #F8FAFC;
   --bg-white: #ffffff;
-  --bg-gray: #fafafa;
-  --bg-gray-soft: #f4f4f4;
+  --bg-gray: #F4F7FA;
+  --bg-gray-soft: #F0F4F8;
 
-  --text-black: #000000;
-  --text-dark: #1d1d1d;
-  --text-body: #4a4a4a;
-  --text-muted: #888888;
+  /* Typography */
+  --text-black: #0D3B82;
+  --text-dark: #1A4E9E;
+  --text-body: #57534E;
+  --text-muted: #78716C;
   --text-white: #ffffff;
-  --text-gray: #999999;
+  --text-gray: #94A3B8;
 
-  --border-light: #e4e4e4;
-  --border-medium: #cccccc;
-  --border-dark: #222222;
-  --border-black: #000000;
+  /* Borders & Dividers */
+  --border-light: #E6EEF5;
+  --border-medium: #E2E8F0;
+  --border-dark: #1A4E9E;
+  --border-black: #0D3B82;
+
+  /* Supporting Accent Colors */
+  --color-amber-heading: #FBBF24;
+  --color-amber-accent: #FCD34D;
 
   --font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
@@ -58,12 +80,16 @@ html {
 
 body {
   font-family: var(--font-family);
-  color: var(--text-dark);
-  background-color: var(--bg-white);
+  color: var(--text-body);
+  background-color: var(--bg-canvas);
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-foundation-navy);
 }
 
 img, svg {
@@ -146,7 +172,7 @@ button {
   align-items: center;
   justify-content: center;
   gap: 0.65rem;
-  color: #000000;
+  color: #ffffff;
   letter-spacing: 0.5px;
   background-color: var(--primary-accent);
   padding: 12px 24px;
@@ -159,7 +185,7 @@ button {
 
 .button:hover {
   background-color: var(--primary-accent-hover);
-  color: #000000;
+  color: #ffffff;
   transform: translateY(-2px);
 }
 
@@ -170,23 +196,23 @@ button {
 }
 
 .button.black {
-  background-color: #000000;
+  background-color: var(--color-foundation-navy);
   color: #ffffff;
 }
 
 .button.black:hover {
-  background-color: #222222;
-  color: var(--primary-accent);
+  background-color: var(--color-foundation-slate);
+  color: #ffffff;
 }
 
 .button.outline {
   background-color: transparent;
-  border: 1.5px solid #000000;
-  color: #000000;
+  border: 1.5px solid var(--color-foundation-navy);
+  color: var(--color-foundation-navy);
 }
 
 .button.outline:hover {
-  background-color: #000000;
+  background-color: var(--color-foundation-navy);
   color: #ffffff;
 }
 
@@ -214,12 +240,12 @@ button {
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #000000;
+  color: var(--color-foundation-slate);
   margin-bottom: 1rem;
 }
 
 .section-label.mint {
-  color: var(--primary-accent);
+  color: var(--color-foundation-terracotta);
 }
 
 .section-label.gray {
@@ -232,7 +258,7 @@ button {
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.15;
-  color: #000000;
+  color: var(--color-foundation-navy);
   margin-bottom: 1.5rem;
   max-width: 900px;
 }
@@ -257,11 +283,11 @@ button {
    Page Inner Hero / Header (For Dedicated Pages)
    ========================================================================== */
 .page-hero {
-  background-color: #000000;
+  background-color: var(--bg-dark);
   color: #ffffff;
   padding-top: 150px;
   padding-bottom: 70px;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid var(--border-dark);
 }
 
 .page-hero-title {
@@ -303,7 +329,7 @@ button {
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.96);
+  background-color: rgba(248, 250, 252, 0.96);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-light);
@@ -327,14 +353,14 @@ button {
 .brand-symbol {
   width: 40px;
   height: 40px;
-  border: 2px solid #000000;
+  border: 2px solid var(--color-foundation-navy);
   background-color: var(--primary-accent);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 800;
   font-size: 16px;
-  color: #000000;
+  color: #ffffff;
   overflow: hidden;
 }
 
@@ -348,7 +374,7 @@ button {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 2px solid #000000;
+  border: 2px solid var(--color-foundation-navy);
   object-fit: cover;
   background-color: #ffffff;
   flex-shrink: 0;
@@ -359,7 +385,7 @@ button {
   font-size: 1.15rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  color: #000000;
+  color: var(--color-foundation-navy);
   line-height: 1.1;
 }
 
@@ -387,7 +413,7 @@ button {
 .link-text {
   font-size: 14.5px;
   font-weight: 600;
-  color: #000000;
+  color: var(--color-foundation-slate);
   transition: var(--transition);
 }
 
@@ -397,13 +423,18 @@ button {
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: #000000;
+  background-color: var(--color-foundation-terracotta);
   transition: width 0.3s ease;
 }
 
 .link-block:hover .link-block-underline,
 .link-block.active .link-block-underline {
   width: 100%;
+}
+
+.link-block:hover .link-text,
+.link-block.active .link-text {
+  color: var(--color-foundation-terracotta);
 }
 
 .link-block.active .link-text {
@@ -885,13 +916,13 @@ button {
 .donation-header-title {
   font-size: 1.75rem;
   font-weight: 800;
-  color: #000000;
+  color: var(--color-foundation-navy);
   letter-spacing: -0.02em;
 }
 
 .frequency-pill-group {
   display: inline-flex;
-  border: 1.5px solid #000000;
+  border: 1.5px solid var(--color-foundation-navy);
   padding: 3px;
   background-color: #ffffff;
 }
@@ -903,13 +934,13 @@ button {
   border: none;
   cursor: pointer;
   background: transparent;
-  color: #000000;
+  color: var(--color-foundation-navy);
   transition: var(--transition);
 }
 
 .freq-pill.active {
-  background-color: #000000;
-  color: var(--primary-accent);
+  background-color: var(--color-foundation-navy);
+  color: #ffffff;
 }
 
 /* Causes Filter Row */
@@ -927,20 +958,20 @@ button {
   background-color: #ffffff;
   font-size: 13px;
   font-weight: 700;
-  color: #000000;
+  color: var(--color-foundation-navy);
   cursor: pointer;
   white-space: nowrap;
   transition: var(--transition);
 }
 
 .cause-tag-btn:hover {
-  border-color: #000000;
+  border-color: var(--color-foundation-navy);
 }
 
 .cause-tag-btn.active {
   background-color: var(--primary-accent);
-  border-color: #000000;
-  color: #000000;
+  border-color: var(--color-foundation-navy);
+  color: #ffffff;
 }
 
 /* Preset Amount Blocks */
@@ -965,17 +996,18 @@ button {
   font-weight: 800;
   text-align: center;
   cursor: pointer;
+  color: var(--color-foundation-navy);
   transition: var(--transition);
 }
 
 .amount-box-btn:hover {
-  border-color: #000000;
+  border-color: var(--color-foundation-navy);
 }
 
 .amount-box-btn.active {
-  background-color: #000000;
-  color: var(--primary-accent);
-  border-color: #000000;
+  background-color: var(--color-foundation-navy);
+  color: #ffffff;
+  border-color: var(--color-foundation-navy);
 }
 
 .custom-input-box {
@@ -1066,8 +1098,9 @@ button {
 
 .green-card-badge {
   display: inline-block;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: var(--color-foundation-navy);
+  color: var(--accent-gold);
+  border: 1px solid var(--accent-gold);
   padding: 3px 10px;
   font-size: 11px;
   font-weight: 800;
@@ -1080,7 +1113,7 @@ button {
   font-weight: 800;
   letter-spacing: -0.025em;
   line-height: 1.15;
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 0.85rem;
   transition: all 0.25s ease;
 }
@@ -1146,7 +1179,7 @@ button {
 .pillar-heading {
   font-size: 1.55rem;
   font-weight: 700;
-  color: #000000;
+  color: var(--color-foundation-navy);
   margin-bottom: 0.65rem;
 }
 
@@ -1284,14 +1317,14 @@ button {
   position: absolute;
   top: 14px;
   left: 14px;
-  background-color: #000000;
-  color: var(--primary-accent);
+  background-color: var(--color-foundation-navy);
+  color: var(--accent-gold);
   padding: 4px 12px;
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
-  border: 1px solid var(--primary-accent);
+  border: 1px solid var(--accent-gold);
 }
 
 .project-title-holder {
@@ -1473,17 +1506,18 @@ button {
 }
 
 .zakat-result-amsterdam {
-  background-color: var(--primary-accent);
-  border: 2px solid #000000;
+  background-color: var(--color-foundation-navy);
+  border: 2px solid var(--border-black);
   padding: 1.25rem;
   text-align: center;
   margin: 1.5rem 0;
+  color: #ffffff;
 }
 
 .zakat-due-amount {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #000000;
+  color: var(--accent-gold);
   line-height: 1.1;
   margin: 0.35rem 0;
 }
@@ -1595,7 +1629,13 @@ button {
 
 .objective-box:hover {
   background-color: var(--primary-accent);
+  color: #ffffff;
   transform: translateY(-3px);
+}
+
+.objective-box:hover .objective-index,
+.objective-box:hover .objective-desc {
+  color: #ffffff;
 }
 
 .objective-index {
@@ -1695,8 +1735,9 @@ button {
 }
 
 .whatsapp-banner-ams {
-  border: 2px solid #000000;
-  background-color: var(--primary-accent);
+  border: 2px solid var(--border-black);
+  background-color: var(--color-foundation-navy);
+  color: #ffffff;
   padding: 2.25rem 2.75rem;
   display: flex;
   align-items: center;
@@ -1710,11 +1751,11 @@ button {
    Amsterdam Footer
    ========================================================================== */
 .footer {
-  background-color: #000000;
+  background-color: var(--bg-dark);
   color: #ffffff;
   padding-top: 5.5rem;
   padding-bottom: 3rem;
-  border-top: 1px solid var(--border-dark);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-text-holder {
@@ -1759,7 +1800,7 @@ button {
 }
 
 .footer-heading {
-  color: #999999;
+  color: var(--color-amber-heading);
   text-transform: uppercase;
   font-size: 13.5px;
   font-weight: 800;
@@ -1830,7 +1871,7 @@ button {
 }
 
 .modal-header-ams {
-  background-color: #000000;
+  background-color: var(--color-foundation-navy);
   color: #ffffff;
   padding: 1.25rem 2rem;
   display: flex;
@@ -1841,7 +1882,7 @@ button {
 .modal-header-ams h3 {
   font-size: 1.25rem;
   font-weight: 800;
-  color: var(--primary-accent);
+  color: #ffffff;
 }
 
 .modal-close-ams {
@@ -1856,7 +1897,7 @@ button {
 }
 
 .pledge-slip-ams {
-  border: 2px dashed #000000;
+  border: 2px dashed var(--color-foundation-navy);
   background-color: var(--bg-gray);
   padding: 1.5rem;
   margin-top: 1.5rem;
@@ -1872,7 +1913,7 @@ button {
 .lightbox-dialog img {
   max-height: 75vh;
   max-width: 100%;
-  border: 3px solid #000000;
+  border: 3px solid var(--border-black);
   margin: 0 auto;
 }
 
@@ -1895,7 +1936,7 @@ button {
 }
 
 .toast {
-  background-color: #000000;
+  background-color: var(--color-foundation-navy);
   color: #ffffff;
   border: 1.5px solid var(--primary-accent);
   padding: 0.85rem 1.4rem;
