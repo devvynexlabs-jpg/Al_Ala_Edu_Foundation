@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate &amp; Bank Accounts | Al-Ala Education Foundation</title>
+  <meta name="description" content="Support Al-Ala Foundation through verified bank accounts (Meezan Bank, HBL, Roshan Digital, Raast, JazzCash). Generate a donation pledge voucher today.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="assets/images/foundation-badge.png">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="fixed-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-wrapper">
+        <div class="brand-symbol">A</div>
+        <div>
+          <div class="brand-name">AL-ALA FOUNDATION</div>
+          <div class="brand-sub">Al-Ala Education System</div>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <div class="link-block animation-01">
+          <a href="index.html" class="link-text">Home</a>
+          <div class="link-block-underline"></div>
+        </div>
+        <div class="link-block animation-01">
+          <a href="about.html" class="link-text">About Us</a>
+          <div class="link-block-underline"></div>
+        </div>
+        <div class="link-block animation-01">
+          <a href="programs.html" class="link-text">Programs</a>
+          <div class="link-block-underline"></div>
+        </div>
+        <div class="link-block animation-01">
+          <a href="impact.html" class="link-text">Our Impact</a>
+          <div class="link-block-underline"></div>
+        </div>
+        <div class="link-block animation-01">
+          <a href="zakat.html" class="link-text">Zakat</a>
+          <div class="link-block-underline"></div>
+        </div>
+        <div class="link-block animation-01 active">
+          <a href="donate.html" class="link-text">Donate</a>
+          <div class="link-block-underline"></div>
+        </div>
+        <div class="link-block animation-01">
+          <a href="contact.html" class="link-text">Contact</a>
+          <div class="link-block-underline"></div>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="currency-toggle-wrap">
+          <span>Currency:</span>
+          <select class="currency-select-box" aria-label="Select Currency">
+            <option value="PKR" selected>PKR (Rs.)</option>
+            <option value="USD">USD ($)</option>
+            <option value="GBP">GBP (£)</option>
+            <option value="EUR">EUR (€)</option>
+            <option value="SAR">SAR (SR)</option>
+          </select>
+        </div>
+        <a href="donate.html" class="button nav">Donate Now</a>
+        <button type="button" class="menu-toggle-btn" id="menu-toggle-btn" aria-label="Open Navigation">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+  <aside class="mobile-nav-panel" id="mobile-nav-panel">
+    <div class="mobile-nav-header">
+      <div class="brand-name" style="color: #fff;">AL-ALA FOUNDATION</div>
+      <div class="mobile-nav-close" id="mobile-nav-close">&times;</div>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="programs.html" class="mobile-nav-link">Welfare Programs</a>
+      <a href="impact.html" class="mobile-nav-link">Our Impact</a>
+      <a href="zakat.html" class="mobile-nav-link">Zakat Calculator</a>
+      <a href="donate.html" class="mobile-nav-link active">Donate &amp; Bank Accounts</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Campus</a>
+      <a href="AlAlaEducationFoundationReport.pdf" download class="mobile-nav-link" style="color: var(--primary-accent);">Download Report (PDF)</a>
+    </div>
+    <div style="margin-top: auto; padding-top: 2rem;">
+      <a href="donate.html" class="button big" style="width: 100%; text-align: center;">Donate Today</a>
+    </div>
+  </aside>
+
+  <!-- Page Hero Header -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-label mint">GIVING HUB</div>
+      <h1 class="page-hero-title">Support Our <span class="mint">Cause</span></h1>
+      <p class="page-hero-lead">
+        Give with 100% confidence. Choose your cause, currency, and transfer through our verified Islamic and national banking channels.
+      </p>
+    </div>
+  </section>
+
+  <!-- Interactive Donation Command Center -->
+  <section class="section" id="giving-box">
+    <div class="container">
+      <div class="donation-card-amsterdam">
+        <div class="donation-card-header">
+          <div>
+            <span class="section-label" style="margin-bottom: 0.35rem;">ONLINE GIVING</span>
+            <div class="donation-header-title">Select Your Cause &amp; Amount</div>
+          </div>
+          <div class="frequency-pill-group">
+            <button type="button" class="freq-pill active" data-frequency="one-time">One-Time</button>
+            <button type="button" class="freq-pill" data-frequency="monthly">Monthly</button>
+          </div>
+        </div>
+
+        <!-- Causes Filter Row: All 8 Official Programs + Zakat -->
+        <div class="causes-filter-scroll">
+          <button type="button" class="cause-tag-btn active" data-cause="Child Welfare & Education">
+            🎓 1. Child Welfare &amp; Education
+          </button>
+          <button type="button" class="cause-tag-btn" data-cause="Educational Welfare & STEM">
+            🔬 2. Educational &amp; STEM
+          </button>
+          <button type="button" class="cause-tag-btn" data-cause="Social Welfare & Food Relief">
+            🍲 3. Social Relief &amp; Food
+          </button>
+          <button type="button" class="cause-tag-btn" data-cause="Health Welfare & Dental Camps">
+            🩺 4. Health &amp; Dental Camps
+          </button>
+          <button type="button" class="cause-tag-btn" data-cause="Women Welfare & Empowerment">
+            🧕 5. Women Empowerment
+          </button>
+          <button type="button" class="cause-tag-btn" data-cause="Elderly & Differently-Abled Care">
+            ♿ 6. Elderly &amp; Disabled Care
+          </button>
+          <button type="button" class="cause-tag-btn" data-cause="Economic Welfare & Qarz-e-Hasana">
+            🤝 7. Economic &amp; Qarz-e-Hasana
+          </button>
+          <button type="button" class="cause-tag-btn" data-cause="Humanitarian Outreach & Relief">
+            🌍 8. Disaster &amp; Gaza Relief
+          </button>
+          <button type="button" class="cause-tag-btn" data-cause="Zakat & Sadaqah General Fund">
+            ✨ Zakat &amp; Sadaqah Fund
+          </button>
+        </div>
+
+        <!-- Preset Amount Boxes -->
+        <div class="preset-amount-grid">
+          <button type="button" class="amount-box-btn" data-pkr="2500">Rs. 2,500</button>
+          <button type="button" class="amount-box-btn active" data-pkr="5000">Rs. 5,000</button>
+          <button type="button" class="amount-box-btn" data-pkr="10000">Rs. 10,000</button>
+          <button type="button" class="amount-box-btn" data-pkr="25000">Rs. 25,000</button>
+          <div class="custom-input-box">
+            <span class="custom-symbol">Rs.</span>
+            <input type="text" id="custom-donation-amount" class="custom-amount-field" placeholder="Custom amount...">
+          </div>
+        </div>
+
+        <!-- Impact Explainer -->
+        <div class="impact-callout-strip">
+          <div id="impact-explainer-text">
+            Your donation of <strong>Rs. 5,000</strong>: Covers full monthly tuition, school bag, books, and uniforms for 1 underprivileged child.
+          </div>
+        </div>
+
+        <!-- Action Row -->
+        <div class="donation-footer-row">
+          <button type="button" id="btn-proceed-donate" class="button big" style="flex: 1; max-width: 420px;">
+            Generate Official Pledge Voucher
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+          <div style="font-size: 13.5px; font-weight: 700; color: var(--text-muted);">
+            100% Donation Policy • Zakat Segregated Account • Verified Audit
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Verified Bank Details (Amsterdam Cards) -->
+  <section class="section bg-gray" id="bank-accounts">
+    <div class="container">
+      <div class="section-label">BANK WIRE DETAILS</div>
+      <h2 class="big-title">Official Foundation Banking Channels</h2>
+      <p style="font-size: 1.15rem; color: var(--text-body); max-width: 700px;">
+        Transfer your contributions directly via online banking, ATM, or mobile wallets. Click the copy buttons to copy account details instantly.
+      </p>
+
+      <div class="bank-grid-amsterdam">
+        <!-- Bank 1: Meezan Bank (Islamic) -->
+        <div class="bank-card-ams">
+          <div class="bank-card-ams-header">
+            <div class="bank-card-ams-name">Meezan Bank</div>
+            <span style="font-size: 11px; font-weight: 800; background: var(--primary-accent); padding: 2px 8px;">ISLAMIC / ZAKAT</span>
+          </div>
+          <div class="bank-data-row">
+            <div class="bank-data-label">Account Title</div>
+            <div class="bank-data-val-box">
+              <span>AL-ALA EDUCATION FOUNDATION</span>
+              <button type="button" class="ams-copy-btn" data-copy-text="AL-ALA EDUCATION FOUNDATION">Copy</button>
+            </div>
+          </div>
+          <div class="bank-data-row">
+            <div class="bank-data-label">Account Number</div>
+            <div class="bank-data-val-box">
+              <span>01020304050607</span>
+              <button type="button" class="ams-copy-btn" data-copy-text="01020304050607">Copy</button>
+            </div>
+          </div>
+          <div class="bank-data-row">
+            <div class="bank-data-label">IBAN</div>
+            <div class="bank-data-val-box">
+              <span>PK36MEZN0001020304050607</span>
+              <button type="button" class="ams-copy-btn" data-copy-text="PK36MEZN0001020304050607">Copy</button>
+            </div>
+          </div>
+          <div style="font-size: 12px; color: var(--text-muted); margin-top: auto; padding-top: 0.5rem;">
+            SWIFT: MEZNPKKA | Campus Branch
+          </div>
+        </div>
+
+        <!-- Bank 2: HBL -->
+        <div class="bank-card-ams">
+          <div class="bank-card-ams-header">
+            <div class="bank-card-ams-name">Habib Bank Ltd (HBL)</div>
+            <span style="font-size: 11px; font-weight: 800; background: #000; color: #fff; padding: 2px 8px;">MAIN ACCOUNT</span>
+          </div>
+          <div class="bank-data-row">
+            <div class="bank-data-label">Account Title</div>
+            <div class="bank-data-val-box">
+              <span>AL-ALA WELFARE FOUNDATION</span>
+              <button type="button" class="ams-copy-btn" data-copy-text="AL-ALA WELFARE FOUNDATION">Copy</button>
+            </div>
+          </div>
+          <div class="bank-data-row">
+            <div class="bank-data-label">Account Number</div>
+            <div class="bank-data-val-box">
+              <span>12345678901234</span>
+              <button type="button" class="ams-copy-btn" data-copy-text="12345678901234">Copy</button>
+            </div>
+          </div>
+          <div class="bank-data-row">
+            <div class="bank-data-label">IBAN</div>
+            <div class="bank-data-val-box">
+              <span>PK78HABB0012345678901234</span>
+              <button type="button" class="ams-copy-btn" data-copy-text="PK78HABB0012345678901234">Copy</button>
+            </div>
+          </div>
+          <div style="font-size: 12px; color: var(--text-muted); margin-top: auto; padding-top: 0.5rem;">
+            SWIFT: HABBBPKK | Education City Branch
+          </div>
+        </div>
+
+        <!-- Bank 3: Digital Wallets & RDA -->
+        <div class="bank-card-ams">
+          <div class="bank-card-ams-header">
+            <div class="bank-card-ams-name">Raast, JazzCash &amp; RDA</div>
+            <span style="font-size: 11px; font-weight: 800; background: var(--primary-accent); padding: 2px 8px;">INSTANT MOBILE</span>
+          </div>
+          <div class="bank-data-row">
+            <div class="bank-data-label">Raast ID / Mobile Wallet</div>
+            <div class="bank-data-val-box">
+              <span>03001234567</span>
+              <button type="button" class="ams-copy-btn" data-copy-text="03001234567">Copy</button>
+            </div>
+          </div>
+          <div class="bank-data-row">
+            <div class="bank-data-label">Account Title</div>
+            <div class="bank-data-val-box">
+              <span>AL-ALA EDUCATION SYSTEM</span>
+              <button type="button" class="ams-copy-btn" data-copy-text="AL-ALA EDUCATION SYSTEM">Copy</button>
+            </div>
+          </div>
+          <div class="bank-data-row">
+            <div class="bank-data-label">Roshan Digital (Overseas Donors)</div>
+            <div class="bank-data-val-box">
+              <span>PK55MEZN0099887766554433</span>
+              <button type="button" class="ams-copy-btn" data-copy-text="PK55MEZN0099887766554433">Copy</button>
+            </div>
+          </div>
+          <div style="font-size: 12px; color: var(--text-muted); margin-top: auto; padding-top: 0.5rem;">
+            Instant settlement from any Pakistani bank app
+          </div>
+        </div>
+      </div>
+
+      <!-- WhatsApp Confirmation Banner -->
+      <div class="whatsapp-banner-ams">
+        <div>
+          <h3 style="font-size: 1.5rem; font-weight: 800; color: #000; margin-bottom: 0.35rem;">Already transferred your donation?</h3>
+          <p style="font-size: 15px; font-weight: 600; color: #111; margin: 0;">
+            Share your payment receipt or screenshot via WhatsApp to receive your official donor voucher and tax certificate immediately.
+          </p>
+        </div>
+        <a href="https://wa.me/923001234567?text=Assalam-o-Alaikum,%20I%20have%20transferred%20a%20donation%20to%20Al-Ala%20Education%20Foundation.%20Please%20find%20my%20screenshot%20attached." 
+           target="_blank" 
+           class="button black big">
+          Send Slip on WhatsApp (+92 300 1234567)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for Donation Pledge Voucher -->
+  <div class="modal-overlay" id="donation-modal">
+    <div class="modal-box-ams">
+      <div class="modal-header-ams">
+        <h3>Complete Your Donation Pledge</h3>
+        <span class="modal-close-ams" id="modal-close-ams">&times;</span>
+      </div>
+      <div class="modal-body-ams">
+        <form id="donation-pledge-form">
+          <div style="margin-bottom: 1.25rem;">
+            <label class="zakat-field-label" for="modal-cause-select">Select Welfare Cause</label>
+            <select id="modal-cause-select" class="zakat-input-control">
+              <option value="Child Welfare & Education">1. Child Welfare &amp; Moral Development</option>
+              <option value="Educational Welfare & STEM">2. Educational Welfare &amp; STEM Learning</option>
+              <option value="Social Welfare & Food Relief">3. Social Welfare &amp; Food Security</option>
+              <option value="Health Welfare & Dental Camps">4. Health Welfare &amp; Free Dental Camps</option>
+              <option value="Women Welfare & Empowerment">5. Women Welfare &amp; Skill Empowerment</option>
+              <option value="Elderly & Differently-Abled Care">6. Elderly &amp; Disabled Care</option>
+              <option value="Economic Welfare & Qarz-e-Hasana">7. Economic Welfare &amp; Qarz-e-Hasana</option>
+              <option value="Humanitarian Outreach & Relief">8. Humanitarian Outreach &amp; Disaster Relief</option>
+              <option value="Zakat & Sadaqah General Fund">✨ 100% Zakat &amp; Sadaqah General Fund</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom: 1.25rem;">
+            <label class="zakat-field-label" for="modal-amount-input">Pledge Amount (PKR Base)</label>
+            <input type="number" id="modal-amount-input" class="zakat-input-control" value="5000" min="500" step="500" required>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+            <div>
+              <label class="zakat-field-label" for="donor-name">Your Full Name *</label>
+              <input type="text" id="donor-name" class="zakat-input-control" placeholder="e.g. Tariq Mehmood" required>
+            </div>
+            <div>
+              <label class="zakat-field-label" for="donor-phone">Phone / WhatsApp *</label>
+              <input type="tel" id="donor-phone" class="zakat-input-control" placeholder="e.g. 03001234567" required>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 1.25rem;">
+            <label class="zakat-field-label" for="donor-email">Email Address (Optional)</label>
+            <input type="email" id="donor-email" class="zakat-input-control" placeholder="donor@example.com">
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <label class="zakat-field-label" for="modal-bank-select">Choose Transfer Method</label>
+            <select id="modal-bank-select" class="zakat-input-control">
+              <option value="Meezan Bank (PK36MEZN0001020304050607)">Meezan Bank - PK36MEZN0001020304050607</option>
+              <option value="Habib Bank Limited (PK78HABB0012345678901234)">Habib Bank Ltd - PK78HABB0012345678901234</option>
+              <option value="Raast / JazzCash (03001234567)">Raast / JazzCash / EasyPaisa - 03001234567</option>
+              <option value="Roshan Digital Account (Overseas Donors)">Roshan Digital Account (Overseas Donors)</option>
+            </select>
+          </div>
+
+          <button type="submit" class="button" style="width: 100%;">
+            Generate Official Pledge Voucher &rarr;
+          </button>
+        </form>
+
+        <div id="pledge-slip-result"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-text-holder">
+        <h1 class="footer-hero-heading">Start your journey to transforming a life today.</h1>
+      </div>
+
+      <div class="footer-flex-container">
+        <div>
+          <div class="brand-name" style="color: #fff; font-size: 1.35rem; margin-bottom: 0.5rem;">AL-ALA FOUNDATION</div>
+          <p style="color: var(--text-gray); font-size: 14.5px; line-height: 1.7; margin-bottom: 1.5rem;">
+            Official Welfare Wing of Al-Ala International School &amp; Education System. Guided by 20+ years of excellence, Islamic ethics, and compassion.
+          </p>
+          <a href="AlAlaEducationFoundationReport.pdf" download class="button nav">
+            Download Annual Report 2025–26
+          </a>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">NAVIGATION</h2>
+          <div class="footer-link-list">
+            <a href="index.html" class="footer-link-item">Home</a>
+            <a href="about.html" class="footer-link-item">About Us</a>
+            <a href="programs.html" class="footer-link-item">Welfare Programs</a>
+            <a href="impact.html" class="footer-link-item">Our Impact &amp; Gallery</a>
+            <a href="zakat.html" class="footer-link-item">Zakat Calculator</a>
+            <a href="donate.html" class="footer-link-item">Donate &amp; Bank Accounts</a>
+            <a href="contact.html" class="footer-link-item">Contact &amp; Campus</a>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">CORE PROGRAMS</h2>
+          <div class="footer-link-list">
+            <a href="programs.html#child-welfare" class="footer-link-item">Child Free Education</a>
+            <a href="programs.html#health-welfare" class="footer-link-item">Cancer Patient Relief</a>
+            <a href="programs.html#health-welfare" class="footer-link-item">Free Dental Camps</a>
+            <a href="programs.html#social-welfare" class="footer-link-item">Ramadan Food Drives</a>
+            <a href="programs.html#women-welfare" class="footer-link-item">Women Skill Circles</a>
+            <a href="programs.html#relief-welfare" class="footer-link-item">Gaza &amp; Flood Relief</a>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">CAMPUS &amp; CONTACT</h2>
+          <div class="footer-link-list">
+            <div style="color: var(--text-gray); font-size: 14px;">Al-Ala International School Campus, Welfare Wing, Pakistan</div>
+            <div style="color: var(--text-gray); font-size: 14px; margin-top: 0.5rem;">Phone: +92 300 1234567 / (042) 35789000</div>
+            <div style="color: var(--text-gray); font-size: 14px; margin-top: 0.5rem;">Email: info@alala-foundation.org</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 Al-Ala Education Foundation. Registered Welfare Society under Al-Ala International School.</div>
+        <div>Molded in Azwedo Amsterdam Creative Editorial UX.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+

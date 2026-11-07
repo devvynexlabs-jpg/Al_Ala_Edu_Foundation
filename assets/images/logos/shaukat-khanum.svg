@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <rect width="100%" height="100%" fill="none"/>
+  <g transform="translate(10, 10)">
+    <!-- Shaukat Khanum emblem: stylized ribbon & crescent in emerald & ruby -->
+    <circle cx="30" cy="30" r="28" fill="#0b5e42"/>
+    <path d="M22 14 C32 14 38 22 38 30 C38 38 30 46 20 46 C28 44 32 38 32 30 C32 22 26 16 22 14 Z" fill="#ffffff"/>
+    <path d="M30 18 C33 22 35 28 32 34 L26 44 C28 45 32 45 35 43 L42 30 C44 26 42 20 38 18 Z" fill="#e53935"/>
+    <circle cx="27" cy="27" r="4" fill="#81d98e"/>
+  </g>
+  <text x="78" y="32" font-family="'Manrope', sans-serif" font-size="14.5" font-weight="800" fill="#000000" letter-spacing="-0.3">SHAUKAT KHANUM</text>
+  <text x="78" y="47" font-family="'Manrope', sans-serif" font-size="10" font-weight="700" fill="#0b5e42" letter-spacing="0.5">MEMORIAL CANCER HOSPITAL</text>
+  <text x="78" y="60" font-family="'Manrope', sans-serif" font-size="8.5" font-weight="600" fill="#666666">&amp; RESEARCH CENTRE</text>
+</svg>
