@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al-Ala Education Foundation | 20+ Years of Educational Excellence & Welfare</title>
+  <meta name="description" content="Al-Ala Education Foundation, affiliated with Al-Ala International School, empowers underprivileged children, cancer patients, and families across Pakistan.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Al-Ala Education Foundation | Transforming Lives Through Education & Welfare">
+  <meta property="og:description" content="Empowering underprivileged children and families with 100% transparent giving. Zakat & Sadaqah eligible.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero-campus-students.jpg">
+
+  <!-- Google Fonts: Manrope (Amsterdam's Primary Typeface) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/foundation-badge.png">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Fixed Navigation (Amsterdam Style)
+       ======================================================================== -->
+  <header class="fixed-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-wrapper">
+        <div class="brand-symbol">A</div>
+        <div>
+          <div class="brand-name">AL-ALA FOUNDATION</div>
+          <div class="brand-sub">Al-Ala Education System</div>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <div class="link-block animation-01 active">
+          <a href="index.html" class="link-text">Home</a>
+          <div class="link-block-underline"></div>
+        </div>
+        <div class="link-block animation-01">
+          <a href="about.html" class="link-text">About Us</a>
+          <div class="link-block-underline"></div>
+        </div>
+        <div class="link-block animation-01">
+          <a href="programs.html" class="link-text">Programs</a>
+          <div class="link-block-underline"></div>
+        </div>
+        <div class="link-block animation-01">
+          <a href="impact.html" class="link-text">Our Impact</a>
+          <div class="link-block-underline"></div>
+        </div>
+        <div class="link-block animation-01">
+          <a href="zakat.html" class="link-text">Zakat</a>
+          <div class="link-block-underline"></div>
+        </div>
+        <div class="link-block animation-01">
+          <a href="donate.html" class="link-text">Donate</a>
+          <div class="link-block-underline"></div>
+        </div>
+        <div class="link-block animation-01">
+          <a href="contact.html" class="link-text">Contact</a>
+          <div class="link-block-underline"></div>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="currency-toggle-wrap">
+          <span>Currency:</span>
+          <select class="currency-select-box" aria-label="Select Currency">
+            <option value="PKR" selected>PKR (Rs.)</option>
+            <option value="USD">USD ($)</option>
+            <option value="GBP">GBP (£)</option>
+            <option value="EUR">EUR (€)</option>
+            <option value="SAR">SAR (SR)</option>
+          </select>
+        </div>
+        <a href="donate.html" class="button nav">
+          Donate Now
+        </a>
+        <button type="button" class="menu-toggle-btn" id="menu-toggle-btn" aria-label="Open Navigation">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+  <aside class="mobile-nav-panel" id="mobile-nav-panel">
+    <div class="mobile-nav-header">
+      <div class="brand-name" style="color: #fff;">AL-ALA FOUNDATION</div>
+      <div class="mobile-nav-close" id="mobile-nav-close">&times;</div>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link active">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="programs.html" class="mobile-nav-link">Welfare Programs</a>
+      <a href="impact.html" class="mobile-nav-link">Our Impact</a>
+      <a href="zakat.html" class="mobile-nav-link">Zakat Calculator</a>
+      <a href="donate.html" class="mobile-nav-link">Donate &amp; Bank Accounts</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Campus</a>
+      <a href="AlAlaEducationFoundationReport.pdf" download class="mobile-nav-link" style="color: var(--primary-accent);">Download Report (PDF)</a>
+    </div>
+    <div style="margin-top: auto; padding-top: 2rem;">
+      <a href="donate.html" class="button big" style="width: 100%; text-align: center;">Donate Today</a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       Hero Home Section (Clean & Uncluttered with Dynamic Carousel)
+       ======================================================================== -->
+  <section class="hero-home-section" id="home">
+    <div class="hero-bg-carousel" id="hero-carousel">
+      <div class="hero-carousel-slide hero-slide-campus active">
+        <img src="assets/images/hero-campus-students.jpg" alt="Al-Ala International School Campus & Students">
+      </div>
+      <div class="hero-carousel-slide hero-slide-education">
+        <img src="assets/images/child-free-education.jpg" alt="Free Education Program & Deserving Students">
+      </div>
+      <div class="hero-carousel-slide hero-slide-stem">
+        <img src="assets/images/edu-stem-workshop.jpg" alt="STEM Workshops & Digital Labs">
+      </div>
+      <div class="hero-carousel-slide hero-slide-food">
+        <img src="assets/images/social-food-distribution.jpg" alt="Ramadan Food Drives & Kitchen">
+      </div>
+      <div class="hero-carousel-slide hero-slide-health">
+        <img src="assets/images/health-medical-checkup.jpg" alt="Free Health & Dental Camps">
+      </div>
+    </div>
+
+    <!-- Directional Cinematic Scrim (Dark on text side, crystal-clear on photo side) -->
+    <div class="hero-directional-scrim"></div>
+
+    <!-- Carousel Nav Indicators -->
+    <div class="hero-carousel-dots" id="hero-carousel-dots" aria-label="Hero Carousel Navigation">
+      <span class="hero-dot active" data-slide="0" title="Al-Ala Campus"></span>
+      <span class="hero-dot" data-slide="1" title="Free Education"></span>
+      <span class="hero-dot" data-slide="2" title="STEM Labs"></span>
+      <span class="hero-dot" data-slide="3" title="Food Relief"></span>
+      <span class="hero-dot" data-slide="4" title="Health Camps"></span>
+    </div>
+
+    <div class="container hero-container">
+      <div class="home-page-hero-text-holder">
+        <div class="hero-text-container">
+          <div class="hero-text">Transforming</div>
+          <div class="hero-text">lives</div>
+          <div class="hero-text">through</div>
+          <div class="hero-text mint">education,</div>
+          <div class="hero-text">compassion</div>
+          <div class="hero-text">&amp;</div>
+          <div class="hero-text">dignity.</div>
+        </div>
+      </div>
+
+      <p class="hero-subtext">
+        Guided by Islamic values and over 20 years of dedication, Al-Ala Education Foundation provides free schooling, healthcare camps, cancer patient assistance, and emergency relief across Pakistan.
+      </p>
+
+      <div class="hero-buttons-holder">
+        <a href="#quick-donate" class="button big">
+          Make a Quick Donation
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a href="about.html" class="button outline-white big">
+          Learn Our Story
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Trust Marquee Strip (Amsterdam High-Contrast Partner Logos)
+       ======================================================================== -->
+  <section class="trust-marquee-section">
+    <div class="container">
+      <div class="trust-headline">Charity Alliances &amp; Partners Documented in Annual Report</div>
+      <div class="partner-logos-grid">
+        <div class="partner-logo-card">
+          <img src="assets/images/logos/shaukat-khanum.svg" alt="Shaukat Khanum Memorial Cancer Hospital & Research Centre">
+        </div>
+        <div class="partner-logo-card">
+          <img src="assets/images/logos/edhi-foundation.svg" alt="Edhi Foundation & Homes">
+        </div>
+        <div class="partner-logo-card">
+          <img src="assets/images/logos/kashana-welfare.svg" alt="Kashana Social Welfare Department">
+        </div>
+        <div class="partner-logo-card">
+          <img src="assets/images/logos/hameed-maggo.svg" alt="Hameed Maggo Trust">
+        </div>
+        <div class="partner-logo-card">
+          <img src="assets/images/logos/chaman-institute.svg" alt="Chaman Institute of Special Children">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Essential Quick Giving Box (High-Conversion - All 8 Programs + Zakat)
+       ======================================================================== -->
+  <section class="donation-command-section" id="quick-donate">
+    <div class="container">
+      <div class="donation-card-amsterdam">
+        <div class="donation-card-header">
+          <div>
+            <span class="section-label" style="margin-bottom: 0.35rem;">IMMEDIATE GIVING</span>
+            <div class="donation-header-title">Sponsor a Child or Welfare Program</div>
+          </div>
+          <div class="frequency-pill-group">
+            <button type="button" class="freq-pill active" data-frequency="one-time">One-Time</button>
+            <button type="button" class="freq-pill" data-frequency="monthly">Monthly</button>
+          </div>
+        </div>
+
+        <!-- Causes Filter Row: All 8 Official Programs + Zakat -->
+        <div class="causes-filter-scroll">
+          <button type="button" class="cause-tag-btn active" data-cause="Child Welfare & Education">
+            🎓 1. Child Welfare &amp; Education
+          </button>
+          <button type="button" class="cause-tag-btn" data-cause="Educational Welfare & STEM">
+            🔬 2. Educational &amp; STEM
+          </button>
+          <button type="button" class="cause-tag-btn" data-cause="Social Welfare & Food Relief">
+            🍲 3. Social Relief &amp; Food
+          </button>
+          <button type="button" class="cause-tag-btn" data-cause="Health Welfare & Dental Camps">
+            🩺 4. Health &amp; Dental Camps
+          </button>
+          <button type="button" class="cause-tag-btn" data-cause="Women Welfare & Empowerment">
+            🧕 5. Women Empowerment
+          </button>
+          <button type="button" class="cause-tag-btn" data-cause="Elderly & Differently-Abled Care">
+            ♿ 6. Elderly &amp; Disabled Care
+          </button>
+          <button type="button" class="cause-tag-btn" data-cause="Economic Welfare & Qarz-e-Hasana">
+            🤝 7. Economic &amp; Qarz-e-Hasana
+          </button>
+          <button type="button" class="cause-tag-btn" data-cause="Humanitarian Outreach & Relief">
+            🌍 8. Disaster &amp; Gaza Relief
+          </button>
+          <button type="button" class="cause-tag-btn" data-cause="Zakat & Sadaqah General Fund">
+            ✨ Zakat &amp; Sadaqah Fund
+          </button>
+        </div>
+
+        <!-- Preset Amount Boxes -->
+        <div class="preset-amount-grid">
+          <button type="button" class="amount-box-btn" data-pkr="2500">Rs. 2,500</button>
+          <button type="button" class="amount-box-btn active" data-pkr="5000">Rs. 5,000</button>
+          <button type="button" class="amount-box-btn" data-pkr="10000">Rs. 10,000</button>
+          <button type="button" class="amount-box-btn" data-pkr="25000">Rs. 25,000</button>
+          <div class="custom-input-box">
+            <span class="custom-symbol">Rs.</span>
+            <input type="text" id="custom-donation-amount" class="custom-amount-field" placeholder="Custom amount...">
+          </div>
+        </div>
+
+        <!-- Impact Explainer -->
+        <div class="impact-callout-strip">
+          <div id="impact-explainer-text">
+            Your donation of <strong>Rs. 5,000</strong>: Covers full monthly tuition, school bag, books, and uniforms for 1 underprivileged child.
+          </div>
+        </div>
+
+        <!-- Action Row -->
+        <div class="donation-footer-row">
+          <button type="button" id="btn-proceed-donate" class="button big" style="flex: 1; max-width: 420px;">
+            Proceed to Donate &amp; Get Voucher
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+          <div style="font-size: 13.5px; font-weight: 700; color: var(--text-muted);">
+            Need direct bank transfer details? <a href="donate.html" style="color: #000; text-decoration: underline;">View Verified Bank Accounts &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       What We Do - Concise Concept Preview
+       ======================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3.5rem; flex-wrap: wrap; gap: 1.5rem;">
+        <div>
+          <div class="section-label">WHAT WE DO?</div>
+          <h2 class="big-title" style="margin-bottom: 0;">Building sustainable futures across three core domains.</h2>
+        </div>
+        <a href="programs.html" class="button outline">
+          View All 8 Programs &rarr;
+        </a>
+      </div>
+
+      <div class="what-we-do-grid sticky-layout" id="what-we-do-grid">
+        <!-- Sticky Left Card in Amsterdam Mint Green -->
+        <div class="green-card-holder" id="sticky-green-card">
+          <div class="green-card-header">
+            <span class="green-card-badge" id="sticky-domain-badge">DOMAIN 01 / 03</span>
+            <div class="green-card-title" id="sticky-domain-title">Education &amp; Child Protection</div>
+            <p id="sticky-domain-desc" style="font-size: 15px; font-weight: 600; color: #000; line-height: 1.5; margin: 0;">
+              100% free schooling, textbooks, uniforms, and STEM learning for orphans and deserving students unable to afford tuition.
+            </p>
+          </div>
+          <div class="green-card-body">
+            <!-- Domain Quick Switcher Tabs -->
+            <div class="domain-tab-group" style="display: flex; gap: 0.5rem; margin-bottom: 1.25rem;">
+              <button type="button" class="domain-tab-pill active" data-domain-id="domain-1">01. Education</button>
+              <button type="button" class="domain-tab-pill" data-domain-id="domain-2">02. Healthcare</button>
+              <button type="button" class="domain-tab-pill" data-domain-id="domain-3">03. Food Relief</button>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <div style="display: flex; align-items: baseline; justify-content: space-between;">
+                <span style="font-size: 13px; font-weight: 800; text-transform: uppercase;">100% Policy</span>
+                <span style="font-size: 13px; font-weight: 700; color: var(--primary-accent-dark);">Zero Admin Cuts on Zakat</span>
+              </div>
+              <div style="display: flex; align-items: baseline; justify-content: space-between; border-top: 1px solid var(--border-light); padding-top: 0.75rem;">
+                <span style="font-size: 13px; font-weight: 800; text-transform: uppercase;">Official Audit</span>
+                <a href="AlAlaEducationFoundationReport.pdf" download style="font-size: 13px; font-weight: 800; text-decoration: underline;">Download Report (PDF) &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column - 3 Main Domains -->
+        <div class="what-we-do-cards-column">
+          <!-- Domain 1 -->
+          <div class="pillar-block active-domain" id="domain-1" data-domain-index="1" data-badge="DOMAIN 01 / 03" data-title="Education &amp; Child Protection" data-desc="100% free schooling, textbooks, uniforms, and STEM learning for orphans and deserving students unable to afford tuition.">
+            <div class="small-icons-holder">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div style="font-size: 12px; font-weight: 800; color: var(--primary-accent-dark); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.35rem;">DOMAIN 01 • SPONSORSHIP &amp; STEM</div>
+            <h3 class="pillar-heading">Education &amp; Child Protection</h3>
+            <p class="pillar-desc">
+              100% free schooling, textbooks, uniforms, and STEM learning for orphans and deserving students unable to afford tuition. Subsidized directly by Al-Ala International School.
+            </p>
+            <a href="programs.html#child-welfare" style="font-size: 13.5px; font-weight: 800; text-decoration: underline;">Explore Education Initiatives &rarr;</a>
+          </div>
+
+          <!-- Domain 2 -->
+          <div class="pillar-block" id="domain-2" data-domain-index="2" data-badge="DOMAIN 02 / 03" data-title="Healthcare &amp; Cancer Patient Relief" data-desc="Regular oncology medicine support through Shaukat Khanum &amp; Hameed Maggo Trust, along with free pediatric dental checkup camps.">
+            <div class="small-icons-holder">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <div style="font-size: 12px; font-weight: 800; color: var(--primary-accent-dark); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.35rem;">DOMAIN 02 • ONCOLOGY &amp; DENTAL</div>
+            <h3 class="pillar-heading">Healthcare &amp; Cancer Patient Relief</h3>
+            <p class="pillar-desc">
+              Regular support for underprivileged cancer patients via Shaukat Khanum &amp; Hameed Maggo Trust, along with free pediatric dental checkup camps conducted by certified doctors.
+            </p>
+            <a href="programs.html#health-welfare" style="font-size: 13.5px; font-weight: 800; text-decoration: underline;">Explore Healthcare Camps &rarr;</a>
+          </div>
+
+          <!-- Domain 3 -->
+          <div class="pillar-block" id="domain-3" data-domain-index="3" data-badge="DOMAIN 03 / 03" data-title="Food Security &amp; Emergency Action" data-desc="Daily hot community kitchen in Ramadan, grocery ration packs, disaster assistance for flood survivors, and Gaza emergency relief shipments.">
+            <div class="small-icons-holder">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div style="font-size: 12px; font-weight: 800; color: var(--primary-accent-dark); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.35rem;">DOMAIN 03 • RATIONS &amp; CRISIS</div>
+            <h3 class="pillar-heading">Food Security &amp; Emergency Action</h3>
+            <p class="pillar-desc">
+              Daily community kitchen in Ramadan, grocery ration packs, disaster assistance for flood survivors, and Gaza emergency relief shipments verified by international logistics.
+            </p>
+            <a href="programs.html#social-welfare" style="font-size: 13.5px; font-weight: 800; text-decoration: underline;">Explore Relief Drives &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Featured Impact Stories (2 Selected Spotlights)
+       ======================================================================== -->
+  <section class="section bg-gray">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3.5rem; flex-wrap: wrap; gap: 1.5rem;">
+        <div>
+          <div class="section-label">SPOTLIGHT WORK</div>
+          <h2 class="big-title" style="margin-bottom: 0;">Fieldwork that transforms lives.</h2>
+        </div>
+        <a href="impact.html" class="button outline">
+          View All Case Studies &rarr;
+        </a>
+      </div>
+
+      <div class="project-grid">
+        <!-- Spotlight 1 -->
+        <div class="project-item">
+          <div class="project-link-holder">
+            <div class="project-image-container">
+              <img src="assets/images/child-free-education.jpg" class="project-image" alt="Free Schooling Classrooms" loading="lazy">
+              <span class="project-badge-tag">CHILD WELFARE</span>
+            </div>
+            <div class="project-title-holder">
+              <h4 class="project-title category-title">CHILD WELFARE</h4>
+              <h4 class="project-title minus">—</h4>
+              <h4 class="project-title">Every Child Deserves to Learn</h4>
+            </div>
+            <p class="project-summary">
+              100% free schooling, uniforms, textbooks, and nutrition for orphans and children of support staff at Al-Ala International School.
+            </p>
+            <a href="donate.html" class="project-cta-link">
+              Sponsor a Child &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Spotlight 2 -->
+        <div class="project-item">
+          <div class="project-link-holder">
+            <div class="project-image-container">
+              <img src="assets/images/social-cancer-shaukatkhanum.jpg" class="project-image" alt="Cancer Patient Medical Assistance" loading="lazy">
+              <span class="project-badge-tag">CANCER AID</span>
+            </div>
+            <div class="project-title-holder">
+              <h4 class="project-title category-title">CANCER RELIEF</h4>
+              <h4 class="project-title minus">—</h4>
+              <h4 class="project-title">Shaukat Khanum &amp; Hameed Maggo Trust Alliance</h4>
+            </div>
+            <p class="project-summary">
+              Direct financial subsidies and grocery ration assistance for impoverished cancer patients undergoing life-saving therapy.
+            </p>
+            <a href="donate.html" class="project-cta-link">
+              Support Cancer Relief &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Vision & Massive Numbers (Amsterdam "Skilful use of..." section)
+       ======================================================================== -->
+  <section class="vision-section-holder">
+    <div class="container">
+      <div class="vision-grid">
+        <div>
+          <div class="section-label mint">OUR PHILOSOPHY</div>
+          <h2 class="vision-quote-title">
+            Skilful use of <span class="mint">education</span> and compassion drives the moral and economic transformation of society.
+          </h2>
+          <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.7; margin-bottom: 2rem;">
+            We believe that long-term social uplift is achieved when quality schooling is accessible to all, independent of wealth or lineage. At Al-Ala, 100% of your charity is converted into direct student and patient empowerment.
+          </p>
+          <a href="about.html" class="button">
+            Read Chairperson's Message &rarr;
+          </a>
+        </div>
+
+        <div class="vision-stats-column">
+          <div class="vision-stat-card">
+            <div class="vision-big-number" data-target="20" data-suffix="+">20+</div>
+            <div class="vision-stat-name">YEARS OF EXCELLENCE</div>
+            <div class="vision-stat-detail">Continuous community presence</div>
+          </div>
+          <div class="vision-stat-card">
+            <div class="vision-big-number" data-target="1200" data-suffix="+">1,200+</div>
+            <div class="vision-stat-name">SCHOLARSHIPS AWARDED</div>
+            <div class="vision-stat-detail">Orphans &amp; needy students</div>
+          </div>
+          <div class="vision-stat-card">
+            <div class="vision-big-number" data-target="15000" data-suffix="+">15,000+</div>
+            <div class="vision-stat-name">RATION BAGS DISTRIBUTED</div>
+            <div class="vision-stat-detail">Ramadan &amp; cancer patients</div>
+          </div>
+          <div class="vision-stat-card">
+            <div class="vision-big-number" data-target="50" data-suffix="+">50+</div>
+            <div class="vision-stat-name">MEDICAL &amp; DENTAL CAMPS</div>
+            <div class="vision-stat-detail">Preventive diagnostic clinics</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Amsterdam Big Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-text-holder">
+        <h1 class="footer-hero-heading">Start your journey to transforming a life today.</h1>
+      </div>
+
+      <div class="footer-flex-container">
+        <div>
+          <div class="brand-name" style="color: #fff; font-size: 1.35rem; margin-bottom: 0.5rem;">AL-ALA FOUNDATION</div>
+          <p style="color: var(--text-gray); font-size: 14.5px; line-height: 1.7; margin-bottom: 1.5rem;">
+            Official Welfare Wing of Al-Ala International School &amp; Education System. Guided by 20+ years of excellence, Islamic ethics, and compassion.
+          </p>
+          <a href="AlAlaEducationFoundationReport.pdf" download class="button nav">
+            Download Annual Report 2025–26
+          </a>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">NAVIGATION</h2>
+          <div class="footer-link-list">
+            <a href="index.html" class="footer-link-item">Home</a>
+            <a href="about.html" class="footer-link-item">About Us</a>
+            <a href="programs.html" class="footer-link-item">Welfare Programs</a>
+            <a href="impact.html" class="footer-link-item">Our Impact &amp; Gallery</a>
+            <a href="zakat.html" class="footer-link-item">Zakat Calculator</a>
+            <a href="donate.html" class="footer-link-item">Donate &amp; Bank Accounts</a>
+            <a href="contact.html" class="footer-link-item">Contact &amp; Campus</a>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">CORE PROGRAMS</h2>
+          <div class="footer-link-list">
+            <a href="programs.html#child-welfare" class="footer-link-item">Child Free Education</a>
+            <a href="programs.html#health-welfare" class="footer-link-item">Cancer Patient Relief</a>
+            <a href="programs.html#health-welfare" class="footer-link-item">Free Dental Camps</a>
+            <a href="programs.html#social-welfare" class="footer-link-item">Ramadan Food Drives</a>
+            <a href="programs.html#women-welfare" class="footer-link-item">Women Skill Circles</a>
+            <a href="programs.html#relief-welfare" class="footer-link-item">Gaza &amp; Flood Relief</a>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">CAMPUS &amp; CONTACT</h2>
+          <div class="footer-link-list">
+            <div style="color: var(--text-gray); font-size: 14px;">Al-Ala International School Campus, Welfare Wing, Pakistan</div>
+            <div style="color: var(--text-gray); font-size: 14px; margin-top: 0.5rem;">Phone: +92 300 1234567 / (042) 35789000</div>
+            <div style="color: var(--text-gray); font-size: 14px; margin-top: 0.5rem;">Email: info@alala-foundation.org</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 Al-Ala Education Foundation. Registered Welfare Society under Al-Ala International School.</div>
+        <div>Molded in Azwedo Amsterdam Creative Editorial UX.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for Quick Donation Pledge Voucher -->
+  <div class="modal-overlay" id="donation-modal">
+    <div class="modal-box-ams">
+      <div class="modal-header-ams">
+        <h3>Complete Your Donation Pledge</h3>
+        <span class="modal-close-ams" id="modal-close-ams">&times;</span>
+      </div>
+      <div class="modal-body-ams">
+        <form id="donation-pledge-form">
+          <div style="margin-bottom: 1.25rem;">
+            <label class="zakat-field-label" for="modal-cause-select">Select Welfare Cause</label>
+            <select id="modal-cause-select" class="zakat-input-control">
+              <option value="Child Welfare & Education">1. Child Welfare &amp; Moral Development</option>
+              <option value="Educational Welfare & STEM">2. Educational Welfare &amp; STEM Learning</option>
+              <option value="Social Welfare & Food Relief">3. Social Welfare &amp; Food Security</option>
+              <option value="Health Welfare & Dental Camps">4. Health Welfare &amp; Free Dental Camps</option>
+              <option value="Women Welfare & Empowerment">5. Women Welfare &amp; Skill Empowerment</option>
+              <option value="Elderly & Differently-Abled Care">6. Elderly &amp; Disabled Care</option>
+              <option value="Economic Welfare & Qarz-e-Hasana">7. Economic Welfare &amp; Qarz-e-Hasana</option>
+              <option value="Humanitarian Outreach & Relief">8. Humanitarian Outreach &amp; Disaster Relief</option>
+              <option value="Zakat & Sadaqah General Fund">✨ 100% Zakat &amp; Sadaqah General Fund</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom: 1.25rem;">
+            <label class="zakat-field-label" for="modal-amount-input">Pledge Amount (PKR Base)</label>
+            <input type="number" id="modal-amount-input" class="zakat-input-control" value="5000" min="500" step="500" required>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+            <div>
+              <label class="zakat-field-label" for="donor-name">Your Full Name *</label>
+              <input type="text" id="donor-name" class="zakat-input-control" placeholder="e.g. Tariq Mehmood" required>
+            </div>
+            <div>
+              <label class="zakat-field-label" for="donor-phone">Phone / WhatsApp *</label>
+              <input type="tel" id="donor-phone" class="zakat-input-control" placeholder="e.g. 03001234567" required>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 1.25rem;">
+            <label class="zakat-field-label" for="donor-email">Email Address (Optional)</label>
+            <input type="email" id="donor-email" class="zakat-input-control" placeholder="donor@example.com">
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <label class="zakat-field-label" for="modal-bank-select">Choose Transfer Method</label>
+            <select id="modal-bank-select" class="zakat-input-control">
+              <option value="Meezan Bank (PK36MEZN0001020304050607)">Meezan Bank - PK36MEZN0001020304050607</option>
+              <option value="Habib Bank Limited (PK78HABB0012345678901234)">Habib Bank Ltd - PK78HABB0012345678901234</option>
+              <option value="Raast / JazzCash (03001234567)">Raast / JazzCash / EasyPaisa - 03001234567</option>
+              <option value="Roshan Digital Account (Overseas Donors)">Roshan Digital Account (Overseas Donors)</option>
+            </select>
+          </div>
+
+          <button type="submit" class="button" style="width: 100%;">
+            Generate Official Pledge Voucher &rarr;
+          </button>
+        </form>
+
+        <div id="pledge-slip-result"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

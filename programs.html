@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welfare Programs | Al-Ala Education Foundation</title>
+  <meta name="description" content="Explore the 8 comprehensive welfare pillars of Al-Ala Foundation: Child Welfare, STEM Education, Health Camps, Cancer Support, and Emergency Relief.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="assets/images/foundation-badge.png">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="fixed-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-wrapper">
+        <div class="brand-symbol">A</div>
+        <div>
+          <div class="brand-name">AL-ALA FOUNDATION</div>
+          <div class="brand-sub">Al-Ala Education System</div>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <div class="link-block animation-01">
+          <a href="index.html" class="link-text">Home</a>
+          <div class="link-block-underline"></div>
+        </div>
+        <div class="link-block animation-01">
+          <a href="about.html" class="link-text">About Us</a>
+          <div class="link-block-underline"></div>
+        </div>
+        <div class="link-block animation-01 active">
+          <a href="programs.html" class="link-text">Programs</a>
+          <div class="link-block-underline"></div>
+        </div>
+        <div class="link-block animation-01">
+          <a href="impact.html" class="link-text">Our Impact</a>
+          <div class="link-block-underline"></div>
+        </div>
+        <div class="link-block animation-01">
+          <a href="zakat.html" class="link-text">Zakat</a>
+          <div class="link-block-underline"></div>
+        </div>
+        <div class="link-block animation-01">
+          <a href="donate.html" class="link-text">Donate</a>
+          <div class="link-block-underline"></div>
+        </div>
+        <div class="link-block animation-01">
+          <a href="contact.html" class="link-text">Contact</a>
+          <div class="link-block-underline"></div>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="currency-toggle-wrap">
+          <span>Currency:</span>
+          <select class="currency-select-box" aria-label="Select Currency">
+            <option value="PKR" selected>PKR (Rs.)</option>
+            <option value="USD">USD ($)</option>
+            <option value="GBP">GBP (£)</option>
+            <option value="EUR">EUR (€)</option>
+            <option value="SAR">SAR (SR)</option>
+          </select>
+        </div>
+        <a href="donate.html" class="button nav">Donate Now</a>
+        <button type="button" class="menu-toggle-btn" id="menu-toggle-btn" aria-label="Open Navigation">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+  <aside class="mobile-nav-panel" id="mobile-nav-panel">
+    <div class="mobile-nav-header">
+      <div class="brand-name" style="color: #fff;">AL-ALA FOUNDATION</div>
+      <div class="mobile-nav-close" id="mobile-nav-close">&times;</div>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="programs.html" class="mobile-nav-link active">Welfare Programs</a>
+      <a href="impact.html" class="mobile-nav-link">Our Impact</a>
+      <a href="zakat.html" class="mobile-nav-link">Zakat Calculator</a>
+      <a href="donate.html" class="mobile-nav-link">Donate &amp; Bank Accounts</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Campus</a>
+      <a href="AlAlaEducationFoundationReport.pdf" download class="mobile-nav-link" style="color: var(--primary-accent);">Download Report (PDF)</a>
+    </div>
+    <div style="margin-top: auto; padding-top: 2rem;">
+      <a href="donate.html" class="button big" style="width: 100%; text-align: center;">Donate Today</a>
+    </div>
+  </aside>
+
+  <!-- Page Hero Header -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-label mint">FIELDWORK INITIATIVES</div>
+      <h1 class="page-hero-title">Our Welfare <span class="mint">Programs</span></h1>
+      <p class="page-hero-lead">
+        Eight dedicated sectors of compassionate service documented in Al-Ala Foundation's 2025–2026 Annual Report, directly funded by donors and subsidized by Al-Ala International School.
+      </p>
+    </div>
+  </section>
+
+  <!-- Programs List in Amsterdam Grid Format -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Program 1: Child Welfare -->
+      <div class="what-we-do-grid" id="child-welfare" style="margin-bottom: 5rem; padding-bottom: 4rem; border-bottom: 1px solid var(--border-light);">
+        <div class="program-image-box">
+          <img src="assets/images/child-free-education.jpg" alt="Child Welfare & Free Education">
+        </div>
+        <div class="program-content-box">
+          <div class="section-label">01 / CHILD WELFARE</div>
+          <h2 class="big-title" style="font-size: 2.25rem;">Child Welfare &amp; Moral Development</h2>
+          <div class="program-snapshot-strip">
+            <span class="program-snapshot-badge">Target: Orphans &amp; Needy</span>
+            <span class="program-snapshot-badge">Scope: 100% Free Schooling</span>
+            <span class="program-snapshot-badge">Impact: 1,200+ Scholarships</span>
+          </div>
+          <p class="pillar-desc">
+            Dedicated to the moral, spiritual, and educational nourishment of children who have lost guardians or means of support, ensuring no deserving child is left behind.
+          </p>
+          <div class="checklist-amsterdam" style="margin-bottom: 2rem;">
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Free Education Program – Every Child Deserves to Learn</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Scholarships and fee concessions for orphans and teachers' children</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Distribution of free books, stationery, bags, and educational supplies</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Nutritional meal program and regular child pediatric health camps</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Clothing collection and distribution for Chaman Institute of Special Children</span>
+            </div>
+          </div>
+          <div>
+            <a href="donate.html" class="button">Sponsor a Child &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Program 2: Educational Welfare -->
+      <div class="what-we-do-grid" id="education-welfare" style="margin-bottom: 5rem; padding-bottom: 4rem; border-bottom: 1px solid var(--border-light);">
+        <div class="program-content-box">
+          <div class="section-label">02 / EDUCATIONAL EXCELLENCE</div>
+          <h2 class="big-title" style="font-size: 2.25rem;">Educational Welfare &amp; STEM Learning</h2>
+          <div class="program-snapshot-strip">
+            <span class="program-snapshot-badge">Target: Students &amp; Teachers</span>
+            <span class="program-snapshot-badge">Scope: STEM Labs &amp; Girl Child</span>
+            <span class="program-snapshot-badge">Impact: 50+ Workshops Held</span>
+          </div>
+          <p class="pillar-desc">
+            Education remained the cornerstone of the Foundation's mission. We equip underprivileged students and teachers with 21st-century modern technology and training.
+          </p>
+          <div class="checklist-amsterdam" style="margin-bottom: 2rem;">
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>STEM Learning Workshops – Innovate, Create, Elevate</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Girl Child Education – Educate a Girl, Empower a Nation</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Teacher Training Initiative – Better Teachers, Brighter Futures</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Digital learning access, adult literacy, and library development drive</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Career counseling sessions and student mentorship programs</span>
+            </div>
+          </div>
+          <div>
+            <a href="donate.html" class="button">Support Education &rarr;</a>
+          </div>
+        </div>
+        <div class="program-image-box">
+          <img src="assets/images/edu-stem-workshop.jpg" alt="STEM Workshops & Learning">
+        </div>
+      </div>
+
+      <!-- Program 3: Social Welfare & Food Security -->
+      <div class="what-we-do-grid" id="social-welfare" style="margin-bottom: 5rem; padding-bottom: 4rem; border-bottom: 1px solid var(--border-light);">
+        <div class="program-image-box">
+          <img src="assets/images/social-food-distribution.jpg" alt="Food Distribution & Rations">
+        </div>
+        <div class="program-content-box">
+          <div class="section-label">03 / SOCIAL RELIEF</div>
+          <h2 class="big-title" style="font-size: 2.25rem;">Social Welfare &amp; Food Security</h2>
+          <div class="program-snapshot-strip">
+            <span class="program-snapshot-badge">Target: Vulnerable Families</span>
+            <span class="program-snapshot-badge">Scope: Ramadan &amp; Emergency</span>
+            <span class="program-snapshot-badge">Impact: 15,000+ Rations</span>
+          </div>
+          <p class="pillar-desc">
+            Actively participating in welfare initiatives aimed at supporting deserving individuals and families with nutrition, cancer treatment aid, and elderly support.
+          </p>
+          <div class="checklist-amsterdam" style="margin-bottom: 2rem;">
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Community kitchen in Ramadan serving daily hot Iftar meals</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Regular charity support for cancer patients through Shaukat Khanum</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Ration support for cancer patients through Hameed Maggo Trust</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Charity support &amp; ration assistance to Edhi Homes &amp; Kashana Social Welfare</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Save the Earth campaign &amp; community tree plantation drives</span>
+            </div>
+          </div>
+          <div>
+            <a href="donate.html" class="button">Donate Food Rations &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Program 4: Health Welfare -->
+      <div class="what-we-do-grid" id="health-welfare" style="margin-bottom: 5rem; padding-bottom: 4rem; border-bottom: 1px solid var(--border-light);">
+        <div class="program-content-box">
+          <div class="section-label">04 / HEALTHCARE</div>
+          <h2 class="big-title" style="font-size: 2.25rem;">Health Welfare &amp; Free Dental Camps</h2>
+          <div class="program-snapshot-strip">
+            <span class="program-snapshot-badge">Target: Students &amp; Public</span>
+            <span class="program-snapshot-badge">Scope: Dental &amp; Clinical Camps</span>
+            <span class="program-snapshot-badge">Impact: 50+ Camps Conducted</span>
+          </div>
+          <p class="pillar-desc">
+            Several medical support initiatives conducted to promote physical well-being, oral hygiene, and early diagnosis for underprivileged patients without means.
+          </p>
+          <div class="checklist-amsterdam" style="margin-bottom: 2rem;">
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Free Dental Checkup Medical Camps with certified dentists</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Free clinical medical checkups &amp; prescription support for the needy</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Women's health education &amp; maternal health awareness sessions</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Student health awareness sessions &amp; healthy eating campaigns</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Hygiene kits, dental supplies &amp; medical prescription subsidies</span>
+            </div>
+          </div>
+          <div>
+            <a href="donate.html" class="button">Fund a Medical Camp &rarr;</a>
+          </div>
+        </div>
+        <div class="program-image-box">
+          <img src="assets/images/health-dental-camp.jpg" alt="Health & Dental Camp">
+        </div>
+      </div>
+
+      <!-- Program 5: Women Welfare -->
+      <div class="what-we-do-grid" id="women-welfare" style="margin-bottom: 5rem; padding-bottom: 4rem; border-bottom: 1px solid var(--border-light);">
+        <div class="program-image-box">
+          <img src="assets/images/women-quran-class.jpg" alt="Women Quran & Skills">
+        </div>
+        <div class="program-content-box">
+          <div class="section-label">05 / WOMEN WELFARE</div>
+          <h2 class="big-title" style="font-size: 2.25rem;">Women Welfare &amp; Skill Empowerment</h2>
+          <div class="program-snapshot-strip">
+            <span class="program-snapshot-badge">Target: Mothers &amp; Widows</span>
+            <span class="program-snapshot-badge">Scope: Quran &amp; Vocational</span>
+            <span class="program-snapshot-badge">Impact: 200+ Women Enrolled</span>
+          </div>
+          <p class="pillar-desc">
+            Empowering women through education, spiritual reflection, and vocational skills to establish economic independence, financial resilience, and confident parenting.
+          </p>
+          <div class="checklist-amsterdam" style="margin-bottom: 2rem;">
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Mothers' workshops on family psychology and child Tarbiyyah</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Weekly Quran reflection classes and intensive Dawrah-e-Quran sessions</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Free vocational stitching, tailoring, and computer courses</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Transitional welfare &amp; emergency grants for widowed mothers</span>
+            </div>
+          </div>
+          <div>
+            <a href="donate.html" class="button">Empower a Mother &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Program 6: Elderly & Differently-Abled -->
+      <div class="what-we-do-grid" id="disability-welfare" style="margin-bottom: 5rem; padding-bottom: 4rem; border-bottom: 1px solid var(--border-light);">
+        <div class="program-content-box">
+          <div class="section-label">06 / INCLUSIVE CARE</div>
+          <h2 class="big-title" style="font-size: 2.25rem;">Elderly &amp; Disabled Care Without Barriers</h2>
+          <div class="program-snapshot-strip">
+            <span class="program-snapshot-badge">Target: Special Needs &amp; Seniors</span>
+            <span class="program-snapshot-badge">Scope: Wheelchairs &amp; Support</span>
+            <span class="program-snapshot-badge">Impact: Chaman Institute Ally</span>
+          </div>
+          <p class="pillar-desc">
+            Extending support to vulnerable members of society through collaboration with specialized welfare organizations and assistive equipment distribution.
+          </p>
+          <div class="checklist-amsterdam" style="margin-bottom: 2rem;">
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Elder friendship circles, Quran reflection &amp; story-sharing sessions</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Mobility assistance and wheelchair distribution for special needs</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>"Ability Beyond Disability" vocational life-skills workshops</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Free consultancy and guidance services for the Al-Ala community</span>
+            </div>
+          </div>
+          <div>
+            <a href="donate.html" class="button">Support Mobility &rarr;</a>
+          </div>
+        </div>
+        <div class="program-image-box">
+          <img src="assets/images/disabled-mobility-support.jpg" alt="Mobility Aids & Care">
+        </div>
+      </div>
+
+      <!-- Program 7: Economic Welfare -->
+      <div class="what-we-do-grid" id="economic-welfare" style="margin-bottom: 5rem; padding-bottom: 4rem; border-bottom: 1px solid var(--border-light);">
+        <div class="program-image-box">
+          <img src="assets/images/economic-wedding-support.jpg" alt="Wedding Support & Qarz-e-Hasana">
+        </div>
+        <div class="program-content-box">
+          <div class="section-label">07 / LIVELIHOOD</div>
+          <h2 class="big-title" style="font-size: 2.25rem;">Economic Welfare &amp; Qarz-e-Hasana</h2>
+          <div class="program-snapshot-strip">
+            <span class="program-snapshot-badge">Target: Orphan Brides &amp; Artisans</span>
+            <span class="program-snapshot-badge">Scope: Jahez &amp; Micro-Finance</span>
+            <span class="program-snapshot-badge">Impact: 100% Interest-Free</span>
+          </div>
+          <p class="pillar-desc">
+            Supporting struggling families through interest-free micro enterprise financing, wedding assistance for needy brides, and clothing distribution to restore financial self-reliance.
+          </p>
+          <div class="checklist-amsterdam" style="margin-bottom: 2rem;">
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Wedding support assistance for orphan and underprivileged brides</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Interest-free loan support (Qarz-e-Hasana) for small family businesses</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Community seasonal cloth drives &amp; winter blanket packages</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Vocational toolkits for micro-trades &amp; home cottage setups</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Emergency household debt relief to preserve family dignity</span>
+            </div>
+          </div>
+          <div>
+            <a href="donate.html" class="button">Support a Family &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Program 8: Relief & Humanitarian -->
+      <div class="what-we-do-grid" id="relief-welfare">
+        <div class="program-content-box">
+          <div class="section-label">08 / EMERGENCY RESPONSE</div>
+          <h2 class="big-title" style="font-size: 2.25rem;">Humanitarian Outreach &amp; Disaster Relief</h2>
+          <div class="program-snapshot-strip">
+            <span class="program-snapshot-badge">Target: Calamity Victims</span>
+            <span class="program-snapshot-badge">Scope: Rations, Tents &amp; Meds</span>
+            <span class="program-snapshot-badge">Impact: Gaza &amp; Flood Relief</span>
+          </div>
+          <p class="pillar-desc">
+            Mobilizing immediate humanitarian relief during times of calamity, including flood relief in Pakistan, earthquake response, and Gaza aid camps.
+          </p>
+          <div class="checklist-amsterdam" style="margin-bottom: 2rem;">
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Emergency aid shipments and relief supplies for Gaza Relief Camps</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Pakistan Flood Relief emergency rations and medical supplies</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Earthquake relief assistance and temporary shelter materials</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Community bake sales for student-led humanitarian fundraising</span>
+            </div>
+            <div class="check-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Direct collaboration with disaster relief networks and emergency logistics</span>
+            </div>
+          </div>
+          <div>
+            <a href="donate.html" class="button">Send Emergency Relief &rarr;</a>
+          </div>
+        </div>
+        <div class="program-image-box">
+          <img src="assets/images/relief-gaza-flood.jpg" alt="Humanitarian & Gaza Aid">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-text-holder">
+        <h1 class="footer-hero-heading">Start your journey to transforming a life today.</h1>
+      </div>
+
+      <div class="footer-flex-container">
+        <div>
+          <div class="brand-name" style="color: #fff; font-size: 1.35rem; margin-bottom: 0.5rem;">AL-ALA FOUNDATION</div>
+          <p style="color: var(--text-gray); font-size: 14.5px; line-height: 1.7; margin-bottom: 1.5rem;">
+            Official Welfare Wing of Al-Ala International School &amp; Education System. Guided by 20+ years of excellence, Islamic ethics, and compassion.
+          </p>
+          <a href="AlAlaEducationFoundationReport.pdf" download class="button nav">
+            Download Annual Report 2025–26
+          </a>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">NAVIGATION</h2>
+          <div class="footer-link-list">
+            <a href="index.html" class="footer-link-item">Home</a>
+            <a href="about.html" class="footer-link-item">About Us</a>
+            <a href="programs.html" class="footer-link-item">Welfare Programs</a>
+            <a href="impact.html" class="footer-link-item">Our Impact &amp; Gallery</a>
+            <a href="zakat.html" class="footer-link-item">Zakat Calculator</a>
+            <a href="donate.html" class="footer-link-item">Donate &amp; Bank Accounts</a>
+            <a href="contact.html" class="footer-link-item">Contact &amp; Campus</a>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">CORE PROGRAMS</h2>
+          <div class="footer-link-list">
+            <a href="programs.html#child-welfare" class="footer-link-item">Child Free Education</a>
+            <a href="programs.html#health-welfare" class="footer-link-item">Cancer Patient Relief</a>
+            <a href="programs.html#health-welfare" class="footer-link-item">Free Dental Camps</a>
+            <a href="programs.html#social-welfare" class="footer-link-item">Ramadan Food Drives</a>
+            <a href="programs.html#women-welfare" class="footer-link-item">Women Skill Circles</a>
+            <a href="programs.html#relief-welfare" class="footer-link-item">Gaza &amp; Flood Relief</a>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">CAMPUS &amp; CONTACT</h2>
+          <div class="footer-link-list">
+            <div style="color: var(--text-gray); font-size: 14px;">Al-Ala International School Campus, Welfare Wing, Pakistan</div>
+            <div style="color: var(--text-gray); font-size: 14px; margin-top: 0.5rem;">Phone: +92 300 1234567 / (042) 35789000</div>
+            <div style="color: var(--text-gray); font-size: 14px; margin-top: 0.5rem;">Email: info@alala-foundation.org</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 Al-Ala Education Foundation. Registered Welfare Society under Al-Ala International School.</div>
+        <div>Molded in Azwedo Amsterdam Creative Editorial UX.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
