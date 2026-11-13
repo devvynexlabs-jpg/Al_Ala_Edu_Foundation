@@ -821,25 +821,25 @@ button {
    ========================================================================== */
 .trust-marquee-section {
   background-color: #ffffff;
-  padding: 3.5rem 0;
-  border-bottom: 2px solid #000000;
+  padding: 3.5rem 0 3rem;
+  border-bottom: 1px solid var(--border-light);
 }
 
 .trust-headline {
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 800;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  color: #000000;
+  color: #64748b;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.25rem;
 }
 
 .partner-logos-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 1.25rem;
-  align-items: center;
+  gap: 1.5rem;
+  align-items: stretch;
 }
 
 @media (max-width: 1100px) {
@@ -850,55 +850,66 @@ button {
 
 @media (max-width: 680px) {
   .partner-logos-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
 
 .partner-logo-card {
   background-color: #ffffff;
-  border: 2px solid #000000;
-  box-shadow: 4px 4px 0px #000000;
-  padding: 1rem 1.25rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+  padding: 1.25rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 85px;
-  transition: var(--transition);
+  min-height: 95px;
+  transition: all 0.25s ease;
 }
 
 .partner-logo-card:hover {
   transform: translateY(-3px);
-  box-shadow: 6px 6px 0px var(--primary-accent);
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
 }
 
 .partner-logo-card img {
-  max-height: 60px;
+  max-height: 52px;
   width: auto;
-  max-width: 100%;
+  max-width: 90%;
   object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.partner-logo-card:hover img {
+  transform: scale(1.03);
 }
 
 /* ==========================================================================
    Quick Donation Center (Amsterdam Style with all 8 programs)
    ========================================================================== */
 .donation-command-section {
-  background-color: var(--bg-gray);
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
   padding: 4.5rem 0;
   border-bottom: 1px solid var(--border-light);
 }
 
 .donation-card-amsterdam {
   background-color: #ffffff;
-  border: 2px solid #000000;
-  box-shadow: 8px 8px 0px #000000;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 20px;
+  box-shadow: 0 16px 40px -10px rgba(12, 43, 80, 0.09), 0 2px 6px rgba(0, 0, 0, 0.03);
   padding: 2.75rem;
   position: relative;
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 768px) {
   .donation-card-amsterdam {
     padding: 1.5rem;
-    box-shadow: 4px 4px 0px #000000;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(12, 43, 80, 0.07);
   }
 }
 
@@ -906,8 +917,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid #000000;
-  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 1.35rem;
   margin-bottom: 1.75rem;
   flex-wrap: wrap;
   gap: 1rem;
@@ -922,63 +933,86 @@ button {
 
 .frequency-pill-group {
   display: inline-flex;
-  border: 1.5px solid var(--color-foundation-navy);
-  padding: 3px;
-  background-color: #ffffff;
+  background-color: #f1f5f9;
+  border-radius: 9999px;
+  padding: 4px;
+  border: 1px solid #e2e8f0;
 }
 
 .freq-pill {
-  padding: 7px 16px;
+  padding: 8px 20px;
   font-size: 13.5px;
-  font-weight: 800;
+  font-weight: 700;
   border: none;
+  border-radius: 9999px;
   cursor: pointer;
   background: transparent;
-  color: var(--color-foundation-navy);
-  transition: var(--transition);
+  color: #64748b;
+  transition: all 0.25s ease;
 }
 
 .freq-pill.active {
   background-color: var(--color-foundation-navy);
   color: #ffffff;
+  box-shadow: 0 2px 8px rgba(15, 43, 72, 0.25);
 }
 
 /* Causes Filter Row */
 .causes-filter-scroll {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.65rem;
-  overflow-x: auto;
-  padding-bottom: 0.85rem;
   margin-bottom: 1.75rem;
 }
 
+@media (max-width: 768px) {
+  .causes-filter-scroll {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .causes-filter-scroll::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 .cause-tag-btn {
-  padding: 9px 15px;
-  border: 1.5px solid var(--border-medium);
-  background-color: #ffffff;
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--color-foundation-navy);
+  padding: 9px 18px;
+  border: 1.5px solid #e2e8f0;
+  background-color: #f8fafc;
+  border-radius: 9999px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #334155;
   cursor: pointer;
   white-space: nowrap;
-  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
 }
 
 .cause-tag-btn:hover {
   border-color: var(--color-foundation-navy);
+  background-color: #ffffff;
+  color: var(--color-foundation-navy);
+  transform: translateY(-1px);
 }
 
 .cause-tag-btn.active {
-  background-color: var(--primary-accent);
+  background-color: var(--color-foundation-navy);
   border-color: var(--color-foundation-navy);
   color: #ffffff;
+  box-shadow: 0 4px 12px rgba(15, 43, 72, 0.2);
 }
 
 /* Preset Amount Blocks */
 .preset-amount-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr) 1.4fr;
-  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr) 1.35fr;
+  gap: 0.85rem;
   margin-bottom: 1.75rem;
 }
 
@@ -989,41 +1023,50 @@ button {
 }
 
 .amount-box-btn {
-  padding: 14px;
-  border: 1.5px solid var(--border-medium);
+  padding: 14px 10px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
   background-color: #ffffff;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 800;
   text-align: center;
   cursor: pointer;
   color: var(--color-foundation-navy);
-  transition: var(--transition);
+  transition: all 0.2s ease;
 }
 
 .amount-box-btn:hover {
   border-color: var(--color-foundation-navy);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
 }
 
 .amount-box-btn.active {
   background-color: var(--color-foundation-navy);
   color: #ffffff;
   border-color: var(--color-foundation-navy);
+  box-shadow: 0 4px 14px rgba(15, 43, 72, 0.25);
 }
 
 .custom-input-box {
   display: flex;
   align-items: center;
-  border: 1.5px solid var(--border-medium);
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
   padding: 0 16px;
+  background-color: #ffffff;
+  transition: all 0.2s ease;
 }
 
 .custom-input-box:focus-within {
-  border-color: #000000;
+  border-color: var(--color-foundation-navy);
+  box-shadow: 0 0 0 3px rgba(15, 43, 72, 0.12);
 }
 
 .custom-symbol {
   font-weight: 800;
-  font-size: 16px;
+  font-size: 15px;
+  color: #64748b;
   margin-right: 8px;
 }
 
@@ -1033,19 +1076,27 @@ button {
   font-size: 15px;
   font-weight: 700;
   padding: 12px 0;
+  outline: none;
+  color: var(--color-foundation-navy);
 }
 
 .impact-callout-strip {
-  background-color: var(--bg-gray);
-  border-left: 5px solid var(--primary-accent);
-  padding: 1.15rem 1.35rem;
-  margin-bottom: 1.75rem;
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-left: 4px solid #16a34a;
+  border-radius: 12px;
+  padding: 1.15rem 1.4rem;
+  margin-bottom: 2rem;
   font-size: 14.5px;
-  color: #222222;
+  color: #166534;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  line-height: 1.55;
 }
 
 .impact-callout-strip strong {
-  color: #000000;
+  color: #0f172a;
   font-weight: 800;
 }
 
@@ -1055,6 +1106,49 @@ button {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1.25rem;
+}
+
+.donation-cta-btn {
+  background-color: var(--color-foundation-navy);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: all 0.25s ease;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(15, 43, 72, 0.2);
+}
+
+.donation-cta-btn:hover {
+  background-color: #0c2033;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(15, 43, 72, 0.3);
+}
+
+.donation-subtext-links {
+  font-size: 13.5px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.donation-subtext-links a {
+  color: var(--color-foundation-navy);
+  font-weight: 700;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.donation-subtext-links a:hover {
+  color: var(--primary-accent-dark);
 }
 
 /* ==========================================================================
@@ -1862,8 +1956,9 @@ button {
 
 .modal-box-ams {
   background-color: #ffffff;
-  border: 2px solid #000000;
-  box-shadow: 10px 10px 0px var(--primary-accent);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.3);
   max-width: 620px;
   width: 100%;
   max-height: 90vh;
@@ -1873,10 +1968,12 @@ button {
 .modal-header-ams {
   background-color: var(--color-foundation-navy);
   color: #ffffff;
-  padding: 1.25rem 2rem;
+  padding: 1.35rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top-left-radius: 19px;
+  border-top-right-radius: 19px;
 }
 
 .modal-header-ams h3 {
