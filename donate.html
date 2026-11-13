@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Donate &amp; Bank Accounts | Al-Ala Education Foundation</title>
-  <meta name="description" content="Support Al-Ala Foundation through verified bank accounts (Meezan Bank, HBL, Roshan Digital, Raast, JazzCash). Generate a donation pledge voucher today.">
+  <meta name="description" content="Support Al-Ala Foundation through verified bank accounts (Meezan Bank, HBL, Roshan Digital, Raast, JazzCash). Generate a donation pledge receipt today.">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,16 +57,6 @@
       </nav>
 
       <div class="nav-actions">
-        <div class="currency-toggle-wrap">
-          <span>Currency:</span>
-          <select class="currency-select-box" aria-label="Select Currency">
-            <option value="PKR" selected>PKR (Rs.)</option>
-            <option value="USD">USD ($)</option>
-            <option value="GBP">GBP (£)</option>
-            <option value="EUR">EUR (€)</option>
-            <option value="SAR">SAR (SR)</option>
-          </select>
-        </div>
         <a href="donate.html" class="button nav">Donate Now</a>
         <button type="button" class="menu-toggle-btn" id="menu-toggle-btn" aria-label="Open Navigation">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
@@ -126,28 +116,28 @@
         <!-- Causes Filter Row: All 8 Official Programs + Zakat -->
         <div class="causes-filter-scroll">
           <button type="button" class="cause-tag-btn active" data-cause="Child Welfare & Education">
-            🎓 1. Child Welfare &amp; Education
+            🎓 Child Welfare &amp; Education
           </button>
           <button type="button" class="cause-tag-btn" data-cause="Educational Welfare & STEM">
-            🔬 2. Educational &amp; STEM
+            🔬 STEM &amp; Digital Education
           </button>
           <button type="button" class="cause-tag-btn" data-cause="Social Welfare & Food Relief">
-            🍲 3. Social Relief &amp; Food
+            🍲 Food Security &amp; Rations
           </button>
           <button type="button" class="cause-tag-btn" data-cause="Health Welfare & Dental Camps">
-            🩺 4. Health &amp; Dental Camps
+            🩺 Health &amp; Dental Camps
           </button>
           <button type="button" class="cause-tag-btn" data-cause="Women Welfare & Empowerment">
-            🧕 5. Women Empowerment
+            🧕 Women Empowerment
           </button>
           <button type="button" class="cause-tag-btn" data-cause="Elderly & Differently-Abled Care">
-            ♿ 6. Elderly &amp; Disabled Care
+            ♿ Elderly &amp; Disability Care
           </button>
           <button type="button" class="cause-tag-btn" data-cause="Economic Welfare & Qarz-e-Hasana">
-            🤝 7. Economic &amp; Qarz-e-Hasana
+            🤝 Economic &amp; Qarz-e-Hasana
           </button>
           <button type="button" class="cause-tag-btn" data-cause="Humanitarian Outreach & Relief">
-            🌍 8. Disaster &amp; Gaza Relief
+            🌍 Emergency &amp; Disaster Relief
           </button>
           <button type="button" class="cause-tag-btn" data-cause="Zakat & Sadaqah General Fund">
             ✨ Zakat &amp; Sadaqah Fund
@@ -168,6 +158,7 @@
 
         <!-- Impact Explainer -->
         <div class="impact-callout-strip">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0; color: #16a34a;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
           <div id="impact-explainer-text">
             Your donation of <strong>Rs. 5,000</strong>: Covers full monthly tuition, school bag, books, and uniforms for 1 underprivileged child.
           </div>
@@ -175,12 +166,13 @@
 
         <!-- Action Row -->
         <div class="donation-footer-row">
-          <button type="button" id="btn-proceed-donate" class="button big" style="flex: 1; max-width: 420px;">
-            Generate Official Pledge Voucher
+          <button type="button" id="btn-proceed-donate" class="donation-cta-btn" style="flex: 1; max-width: 380px;">
+            Proceed to Donate
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </button>
-          <div style="font-size: 13.5px; font-weight: 700; color: var(--text-muted);">
-            100% Donation Policy • Zakat Segregated Account • Verified Audit
+          <div class="donation-subtext-links">
+            <span>Prefer direct bank transfer?</span>
+            <a href="#bank-accounts">See Bank Accounts Below &darr;</a>
           </div>
         </div>
       </div>
@@ -299,7 +291,7 @@
         <div>
           <h3 style="font-size: 1.5rem; font-weight: 800; color: #ffffff; margin-bottom: 0.35rem;">Already transferred your donation?</h3>
           <p style="font-size: 15px; font-weight: 600; color: rgba(255, 255, 255, 0.9); margin: 0;">
-            Share your payment receipt or screenshot via WhatsApp to receive your official donor voucher and tax certificate immediately.
+            Share your payment receipt or screenshot via WhatsApp to receive your official donation receipt and tax certificate immediately.
           </p>
         </div>
         <a href="https://wa.me/923001234567?text=Assalam-o-Alaikum,%20I%20have%20transferred%20a%20donation%20to%20Al-Ala%20Education%20Foundation.%20Please%20find%20my%20screenshot%20attached." 
@@ -323,14 +315,14 @@
           <div style="margin-bottom: 1.25rem;">
             <label class="zakat-field-label" for="modal-cause-select">Select Welfare Cause</label>
             <select id="modal-cause-select" class="zakat-input-control">
-              <option value="Child Welfare & Education">1. Child Welfare &amp; Moral Development</option>
-              <option value="Educational Welfare & STEM">2. Educational Welfare &amp; STEM Learning</option>
-              <option value="Social Welfare & Food Relief">3. Social Welfare &amp; Food Security</option>
-              <option value="Health Welfare & Dental Camps">4. Health Welfare &amp; Free Dental Camps</option>
-              <option value="Women Welfare & Empowerment">5. Women Welfare &amp; Skill Empowerment</option>
-              <option value="Elderly & Differently-Abled Care">6. Elderly &amp; Disabled Care</option>
-              <option value="Economic Welfare & Qarz-e-Hasana">7. Economic Welfare &amp; Qarz-e-Hasana</option>
-              <option value="Humanitarian Outreach & Relief">8. Humanitarian Outreach &amp; Disaster Relief</option>
+              <option value="Child Welfare & Education">Child Welfare &amp; Moral Development</option>
+              <option value="Educational Welfare & STEM">Educational Welfare &amp; STEM Learning</option>
+              <option value="Social Welfare & Food Relief">Social Welfare &amp; Food Security</option>
+              <option value="Health Welfare & Dental Camps">Health Welfare &amp; Free Dental Camps</option>
+              <option value="Women Welfare & Empowerment">Women Welfare &amp; Skill Empowerment</option>
+              <option value="Elderly & Differently-Abled Care">Elderly &amp; Disability Care</option>
+              <option value="Economic Welfare & Qarz-e-Hasana">Economic Welfare &amp; Qarz-e-Hasana</option>
+              <option value="Humanitarian Outreach & Relief">Humanitarian Outreach &amp; Disaster Relief</option>
               <option value="Zakat & Sadaqah General Fund">✨ 100% Zakat &amp; Sadaqah General Fund</option>
             </select>
           </div>
@@ -367,7 +359,7 @@
           </div>
 
           <button type="submit" class="button" style="width: 100%;">
-            Generate Official Pledge Voucher &rarr;
+            Confirm Donation Pledge &rarr;
           </button>
         </form>
 
@@ -393,7 +385,7 @@
             </div>
           </div>
           <p style="color: var(--text-gray); font-size: 14.5px; line-height: 1.7; margin-bottom: 1.5rem;">
-            Official Welfare Wing of Al-Ala International School &amp; Education System. Guided by 20+ years of excellence, Islamic ethics, and compassion.
+            Dedicated to transforming lives across Pakistan through quality education, healthcare, and humanitarian relief. Guided by 20+ years of institutional excellence, Islamic ethics, and compassion.
           </p>
           <a href="AlAlaEducationFoundationReport.pdf" download class="button nav">
             Download Annual Report 2025–26
@@ -428,7 +420,7 @@
         <div>
           <h2 class="footer-heading">CAMPUS &amp; CONTACT</h2>
           <div class="footer-link-list">
-            <div style="color: var(--text-gray); font-size: 14px;">Al-Ala International School Campus, Welfare Wing, Pakistan</div>
+            <div style="color: var(--text-gray); font-size: 14px;">Al-Ala Campus, Welfare Wing, Pakistan</div>
             <div style="color: var(--text-gray); font-size: 14px; margin-top: 0.5rem;">Phone: +92 300 1234567 / (042) 35789000</div>
             <div style="color: var(--text-gray); font-size: 14px; margin-top: 0.5rem;">Email: info@alala-foundation.org</div>
           </div>
@@ -436,8 +428,7 @@
       </div>
 
       <div class="footer-bottom-bar">
-        <div>&copy; 2026 Al-Ala Education Foundation. Registered Welfare Society under Al-Ala International School.</div>
-        <div>Molded in Azwedo Amsterdam Creative Editorial UX.</div>
+        <div>&copy; 2026 Al-Ala Education Foundation. All rights reserved.</div>
       </div>
     </div>
   </footer>

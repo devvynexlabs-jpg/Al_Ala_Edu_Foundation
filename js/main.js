@@ -408,13 +408,13 @@ function initDonationModal() {
 
       if (slipContainer) {
         slipContainer.innerHTML = `
-          <div class="pledge-slip-ams">
-            <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #000000; padding-bottom: 0.75rem; margin-bottom: 1rem;">
+          <div class="pledge-slip-ams" style="border: 1px solid #e2e8f0; border-radius: 14px; padding: 1.5rem; background: #fafafa; margin-top: 1.5rem;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.75rem; margin-bottom: 1rem;">
               <div>
-                <strong style="font-size: 1.2rem; color: #000000; text-transform: uppercase; letter-spacing: -0.01em;">AL-ALA EDUCATION FOUNDATION</strong>
-                <p style="font-size: 12px; font-weight: 700; color: var(--text-muted); margin: 0;">OFFICIAL DONATION PLEDGE VOUCHER</p>
+                <strong style="font-size: 1.15rem; color: #0f2b48; text-transform: uppercase; letter-spacing: -0.01em;">AL-ALA EDUCATION FOUNDATION</strong>
+                <p style="font-size: 11.5px; font-weight: 700; color: var(--text-muted); margin: 0;">OFFICIAL DONATION PLEDGE CONFIRMATION</p>
               </div>
-              <span style="font-family: monospace; font-size: 14px; font-weight: 800; color: #000000; background: var(--primary-accent); padding: 4px 10px; border: 1.5px solid #000000;">
+              <span style="font-family: monospace; font-size: 13px; font-weight: 800; color: #0f2b48; background: #e0f2fe; padding: 4px 10px; border-radius: 6px; border: 1px solid #bae6fd;">
                 ${trackingId}
               </span>
             </div>
@@ -423,12 +423,12 @@ function initDonationModal() {
               <div><strong style="color: var(--text-muted); font-size: 11px; text-transform: uppercase;">DONOR NAME:</strong><br><span style="font-weight: 800;">${donorName}</span></div>
               <div><strong style="color: var(--text-muted); font-size: 11px; text-transform: uppercase;">DATE:</strong><br><span style="font-weight: 800;">${dateStr}</span></div>
               <div><strong style="color: var(--text-muted); font-size: 11px; text-transform: uppercase;">ALLOCATED CAUSE:</strong><br><span style="font-weight: 800;">${cause}</span></div>
-              <div><strong style="color: var(--text-muted); font-size: 11px; text-transform: uppercase;">AMOUNT:</strong><br><span style="font-size: 1.35rem; font-weight: 800; color: #000000;">${formatAmount(amountPkr)}</span></div>
+              <div><strong style="color: var(--text-muted); font-size: 11px; text-transform: uppercase;">AMOUNT:</strong><br><span style="font-size: 1.35rem; font-weight: 800; color: var(--color-foundation-navy);">${formatAmount(amountPkr)}</span></div>
             </div>
 
-            <div style="background: #ffffff; border: 1.5px solid #000000; padding: 1rem; margin-bottom: 1.25rem; font-size: 13.5px;">
+            <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1rem; margin-bottom: 1.25rem; font-size: 13.5px;">
               <strong>Selected Transfer Account:</strong> ${selectedBank}<br>
-              <span style="color: var(--text-body);">Please complete the online bank transfer or mobile deposit and send your confirmation slip on WhatsApp.</span>
+              <span style="color: var(--text-body);">Please complete the online bank transfer or mobile deposit and send your confirmation receipt on WhatsApp.</span>
             </div>
 
             <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
@@ -438,7 +438,7 @@ function initDonationModal() {
                 Confirm on WhatsApp
               </a>
               <button type="button" class="button outline" onclick="window.print()">
-                Print Slip
+                Print Receipt
               </button>
             </div>
           </div>
