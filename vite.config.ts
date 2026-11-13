@@ -1,14 +1,39 @@
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
+import fs from 'fs';
 import path from 'path';
 import {defineConfig} from 'vite';
 
+function copyReportPlugin() {
+  return {
+    name: 'copy-report-pdf',
+    closeBundle() {
+      if (fs.existsSync('AlAlaEducationFoundationReport.pdf') && fs.existsSync('dist')) {
+        fs.copyFileSync('AlAlaEducationFoundationReport.pdf', 'dist/AlAlaEducationFoundationReport.pdf');
+      }
+    },
+  };
+}
+
 export default defineConfig(() => {
   return {
-    plugins: [react(), tailwindcss()],
+    plugins: [react(), tailwindcss(), copyReportPlugin()],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
+      },
+    },
+    build: {
+      rollupOptions: {
+        input: {
+          main: path.resolve(__dirname, 'index.html'),
+          about: path.resolve(__dirname, 'about.html'),
+          programs: path.resolve(__dirname, 'programs.html'),
+          impact: path.resolve(__dirname, 'impact.html'),
+          zakat: path.resolve(__dirname, 'zakat.html'),
+          donate: path.resolve(__dirname, 'donate.html'),
+          contact: path.resolve(__dirname, 'contact.html'),
+        },
       },
     },
     server: {
